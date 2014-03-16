@@ -1,0 +1,8 @@
+EN dcm_divider NULL E:/IIT/Process/vhdl/dcm_divider.vhd sub00/vhpl02 1377510845
+AR uart structure C:/Users/DELL/Desktop/Motor_New/motor_new/uart/uart/hdl/uart.vhd sub00/vhpl07 1346742171
+AR dcm_divider behavioral E:/IIT/Process/vhdl/dcm_divider.vhd sub00/vhpl03 1377510846
+AR motor_state motor_state_sequential E:/IIT/Process/vhdl/motor.vhd sub00/vhpl01 1377510850
+AR clk_divider behavioral E:/IIT/Process/vhdl/clk_divider.vhd sub00/vhpl05 1377510848
+EN clk_divider NULL E:/IIT/Process/vhdl/clk_divider.vhd sub00/vhpl04 1377510847
+EN uart NULL C:/Users/DELL/Desktop/Motor_New/motor_new/uart/uart/hdl/uart.vhd sub00/vhpl06 1346742170
+EN motor_state NULL E:/IIT/Process/vhdl/motor.vhd sub00/vhpl00 1377510849

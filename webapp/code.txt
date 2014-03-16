@@ -1,0 +1,234 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.IO.Ports;
+using System.Runtime.InteropServices;
+
+namespace webapp
+
+{
+    static class NativeMethods
+    {
+        [DllImport("kernel32.dll")]
+        public static extern IntPtr LoadLibrary(string dllToLoad);
+
+        [DllImport("kernel32.dll")]
+        public static extern IntPtr GetProcAddress(IntPtr hModule, string procedureName);
+
+
+        [DllImport("kernel32.dll", CharSet = CharSet.Auto)]
+        public static extern bool FreeLibrary(IntPtr hModule);
+    }
+
+    public partial class webform : System.Web.UI.Page
+    {
+        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        private delegate int ps10_Connect(int a, int b, int c, int d, int e, int f, int g, int h);
+        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        private delegate int ps10_MotorInit(int i, int j);
+        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        private delegate int ps10_ResetCounter(int i, int j);
+        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        private delegate int ps10_Disconnect(int m);
+        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        private delegate int ps10_SetTargetMode(int n, int o, int p);
+        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        private delegate int ps10_MoveEx(int q, int r, double s, int t);
+
+        //[DllImport("ps10.dll", CallingConvention = CallingConvention.StdCall)]
+        //static extern long PS10_Connect(long a, long b, long c, long d, long e, long f, long g, long h);
+        //[DllImport("ps10.dll", CallingConvention = CallingConvention.StdCall)]
+        //static extern long PS10_MotorInit(long i, long j);
+        //[DllImport("ps10.dll", CallingConvention = CallingConvention.StdCall)]
+        //static extern long PS10_ResetCounter(long k, long l);
+        //[DllImport("ps10.dll", CallingConvention = CallingConvention.StdCall)]
+        //static extern long PS10_Disconnect(long m);
+        //[DllImport("ps10.dll", CallingConvention = CallingConvention.StdCall)]
+        //static extern long PS10_SetTargetMode(long n, long o, long p);
+        //[DllImport("ps10.dll", CallingConvention = CallingConvention.StdCall)]
+        //static extern long PS10_MoveEx(long q, long r, long s, long t);
+
+        System.IO.Ports.SerialPort serialport = new System.IO.Ports.SerialPort();
+
+       
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            object[] availports = SerialPort.GetPortNames();
+            List<object> list =(List<object>)availports.Cast<Object>().ToList();
+            int length = availports.Length;
+            if (length == 0)
+            {
+                this.Label2.Text = "No Port found";
+            }
+            else
+            {
+                this.TextBox1.Text = (string)availports[0];
+            }
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+        //    try
+        //    {
+           
+        //    if (!this.serialport.IsOpen)
+        //    {
+
+        //        string portname = (string)((TextBox1).Text);
+
+        //        if ((this.TextBox1.Text == String.Empty))
+        //        {
+        //            this.Label2.Text = "Display : Enter COM Port";
+        //        }
+        //        else
+        //        {
+        //            if (RadioButton5.Checked)
+        //            {
+        //                serialport.PortName = portname;
+        //                this.serialport.Open();
+        //                this.Button1.Text = "Close Port";
+        //                this.Label2.Text = "Display : Port Opened";
+        //            }
+        //            else 
+        //            {
+        //                 //COM Port for PS10 Controller
+        //                string port = portname.Substring(3);
+        //                int nComPort = Int32.Parse(port);
+
+        //                IntPtr pDll = NativeMethods.LoadLibrary("ps10.dll");
+
+        //                IntPtr pAddressOfFunctionToCall = NativeMethods.GetProcAddress(pDll, "_PS10_Connect@32");
+        //                ps10_Connect connect = (ps10_Connect)Marshal.GetDelegateForFunctionPointer(pAddressOfFunctionToCall, typeof(ps10_Connect));
+        //                int check = connect(1, 0, nComPort, 9600, 0, 0, 8, 0);
+                        
+        //                IntPtr pAddressOfFunctionToCallm = NativeMethods.GetProcAddress(pDll, "_PS10_MotorInit@8");
+        //                ps10_MotorInit motorinit = (ps10_MotorInit)Marshal.GetDelegateForFunctionPointer(pAddressOfFunctionToCall, typeof(ps10_MotorInit));
+        //                int checkm = motorinit(1, 1);
+
+        //                IntPtr pAddressOfFunctionToCalln = NativeMethods.GetProcAddress(pDll, "_PS10_ResetCounter@8");
+        //                ps10_ResetCounter resetcounter = (ps10_ResetCounter)Marshal.GetDelegateForFunctionPointer(pAddressOfFunctionToCalln, typeof(ps10_ResetCounter));
+        //                int checkn = resetcounter(1, 1);
+
+        //                bool resultn = NativeMethods.FreeLibrary(pDll);
+
+        //                this.Label2.Text = "PS 10 Connected and Axis Initialized";
+        //            }
+  
+        //        }
+        //    }
+
+        //    else
+        //    {
+        //        if (RadioButton5.Checked)
+        //        {
+        //            this.serialport.Close();
+        //            this.Button1.Text = "Open Port";
+        //            this.Label2.Text = "Display : Port Closed";
+        //        }
+
+        //        else
+        //        {
+        //            IntPtr pDll = NativeMethods.LoadLibrary("ps10.dll");
+        //            IntPtr pAddressOfFunctionToCall = NativeMethods.GetProcAddress(pDll, "_PS10_Disconnect@4");
+        //            ps10_Disconnect disconnect = (ps10_Disconnect)Marshal.GetDelegateForFunctionPointer(pAddressOfFunctionToCall, typeof(ps10_Disconnect));
+        //            int check = disconnect(1);
+                   
+        //            this.Label2.Text = "Display : PS10 Controller Disconnected";
+        //        }
+
+        //    }
+
+        //}
+
+        //     catch(Exception){
+        //                this.Label2.Text="Display : Check Port Number";
+        //                                               }
+        }
+
+
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+
+            //try
+            //{
+            //if ((!this.serialport.IsOpen))
+            //{
+            //    object[] availports = SerialPort.GetPortNames();
+            //    int length = availports.Length;
+            //    if (length == 0)
+            //    {
+            //        this.Label2.Text = "No Port found";
+            //    }
+            //    else
+            //    {
+            //        this.TextBox1.Text = (string)availports[0];
+            //    }
+            //    //this.serialport.Open();
+            //}
+
+                 if(this.serialport.IsOpen)
+                 {
+                    if (RadioButton5.Checked)
+                    {
+                        byte dir;
+                        string value;
+                        byte[] frame = new byte[3];
+                        value = TextBox2.Text;
+
+                        if (!(value == null))
+                        {
+
+                            if (RadioButton3.Checked)
+                                dir = 0xAA;
+                            else
+                                dir = 0xBB;
+
+                            frame = goniometer.Goniofuncs.rotate(dir, value);
+                            serialport.Write(frame, 0, 3);
+                        }
+                        
+                    }
+
+                    else
+                    {
+                        long udecvalue, sdecvalue;
+                        string value = TextBox2.Text;
+
+                        if (!(value == null))
+                        {
+
+                            udecvalue = (long)Int32.Parse(value);
+
+                            if (RadioButton3.Checked)
+                                sdecvalue = udecvalue;
+                            else
+                                sdecvalue = -1 * udecvalue;
+
+                            IntPtr pDll = NativeMethods.LoadLibrary("ps10.dll");
+                            IntPtr pAddressOfFunctionToCall = NativeMethods.GetProcAddress(pDll, "_PS10_SetTargetMode@12");
+                            ps10_SetTargetMode settargetmode = (ps10_SetTargetMode)Marshal.GetDelegateForFunctionPointer(pAddressOfFunctionToCall, typeof(ps10_SetTargetMode));
+                            int check = settargetmode(1, 1, 0);
+                            
+                            IntPtr pAddressOfFunctionToCalln = NativeMethods.GetProcAddress(pDll, "_PS10_MoveEx@20");
+                            ps10_MoveEx moveex = (ps10_MoveEx)Marshal.GetDelegateForFunctionPointer(pAddressOfFunctionToCalln, typeof(ps10_MoveEx));
+                            int checkn = moveex(1, 1, sdecvalue, 0);
+                            bool resultn = NativeMethods.FreeLibrary(pDll);
+                        }
+
+                    }
+
+                }
+            //}
+
+            //catch (Exception)
+            //{
+            //    this.Label2.Text = "Display : Unhandled Exception";
+            //}
+        }
+    }
+}

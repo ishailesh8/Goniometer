@@ -1,0 +1,295 @@
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut 
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/ISE/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/ISE/motor_state.xst" -ofn "C:/Users/DELL/Desktop/ISE/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/ISE/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/ISE/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/ISE/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/ISE/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/ISE/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/ISE/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/ISE/motor_state.xst" -ofn "C:/Users/DELL/Desktop/ISE/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/ISE/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/ISE/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/ISE/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/ISE/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/ISE/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "C:/Users/DELL/Desktop/Final/ISE_Goniometer/motor_new.ise" -intstyle ise -ifn "C:/Users/DELL/Desktop/Final/ISE_Goniometer/motor_state.xst" -ofn "C:/Users/DELL/Desktop/Final/ISE_Goniometer/motor_state.syr"
+ngdbuild -ise "C:/Users/DELL/Desktop/Final/ISE_Goniometer/motor_new.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "motor_state.ngc" motor_state.ngd
+map -ise "C:/Users/DELL/Desktop/Final/ISE_Goniometer/motor_new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o motor_state_map.ncd motor_state.ngd motor_state.pcf
+par -ise "C:/Users/DELL/Desktop/Final/ISE_Goniometer/motor_new.ise" -w -intstyle ise -ol std -t 1 motor_state_map.ncd motor_state.ncd motor_state.pcf
+trce -ise "C:/Users/DELL/Desktop/Final/ISE_Goniometer/motor_new.ise" -intstyle ise -v 3 -s 7 -xml motor_state motor_state.ncd -o motor_state.twr motor_state.pcf -ucf motor_state.ucf
+bitgen -ise "C:/Users/DELL/Desktop/Final/ISE_Goniometer/motor_new.ise" -intstyle ise -f motor_state.ut motor_state.ncd
+xst -ise "I:/IIT/RP02389/Final/Final_Old/Plus/ISE_Goniometer/motor_new.ise" -intstyle ise -ifn "I:/IIT/RP02389/Final/Final_Old/Plus/ISE_Goniometer/motor_state.xst" -ofn "I:/IIT/RP02389/Final/Final_Old/Plus/ISE_Goniometer/motor_state.syr"
+xst -ise "E:/IIT/Process/vhdl/motor_new.ise" -intstyle ise -ifn "E:/IIT/Process/vhdl/motor_state.xst" -ofn "E:/IIT/Process/vhdl/motor_state.syr"

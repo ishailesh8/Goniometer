@@ -1,0 +1,4 @@
+ERROR:MDT - C_BASEADDR - I:\IIT\Process\edk\dump.mhs line 34 - Value of
+   parameter of type std_logic_vector must start with prefix 0x or 0b
+ERROR:MDT - C_BASEADDR - I:\IIT\Process\edk\dump.mhs line 51 - Value of
+   parameter of type std_logic_vector must start with prefix 0x or 0b

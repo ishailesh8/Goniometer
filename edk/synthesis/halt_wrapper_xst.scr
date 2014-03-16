@@ -1,0 +1,12 @@
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc2vp30ff896-7
+-top halt_wrapper
+-ifmt MIXED
+-ifn halt_wrapper_xst.prj
+-ofn ../implementation/halt_wrapper.ngc
+-hierarchy_separator /
+-iobuf NO
+-sd {../implementation/halt_wrapper}

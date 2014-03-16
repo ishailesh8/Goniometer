@@ -1,0 +1,1 @@
+ -p virtex2p -lang vhdl   gui/executable.elf -s mti -X D:/Process/edk/ -E D:/Process/edk/

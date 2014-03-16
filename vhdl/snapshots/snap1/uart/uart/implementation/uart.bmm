@@ -1,0 +1,26 @@
+// File: C:\Users\DELL\Desktop\Motor_New\motor_new\uart\uart\implementation\uart.bmm
+
+ADDRESS_MAP ppc405_0 PPC405 100
+	ADDRESS_SPACE plb_bram_if_cntlr_1_bram_combined COMBINED [0xffff8000:0xffffffff]
+		ADDRESS_RANGE RAMB16
+		BUS_BLOCK
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s4_s4_0 [63:60] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s4_s4_1 [59:56] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s4_s4_2 [55:52] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s4_s4_3 [51:48] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s4_s4_4 [47:44] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s4_s4_5 [43:40] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s4_s4_6 [39:36] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s4_s4_7 [35:32] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s4_s4_8 [31:28] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s4_s4_9 [27:24] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s4_s4_10 [23:20] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s4_s4_11 [19:16] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s4_s4_12 [15:12] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s4_s4_13 [11:8] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s4_s4_14 [7:4] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s4_s4_15 [3:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+END_ADDRESS_MAP;

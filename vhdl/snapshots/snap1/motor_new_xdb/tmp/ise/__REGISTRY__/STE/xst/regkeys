@@ -1,0 +1,6 @@
+CommandLine
+C:\Xilinx\10.1\ISE\bin\nt64\unwrapped\xst.exe -ise E:/IIT/Process/vhdl/motor_new.ise -intstyle ise -ifn E:/IIT/Process/vhdl/motor_state.xst -ofn E:/IIT/Process/vhdl/motor_state.syr -finalclean 1
+s
+FormatString
+xst [-ifn <InputFile>] [-ofn <OutputFile>] [-ise <iseProjectFile>] [--quiet] [-intstyle <Style>] [--deb <DebugLevel>] [--finalclean <Clean>] [--PcubeFlow] [--globOptFlow] [--XstNtrc]
+s

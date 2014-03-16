@@ -1,0 +1,1467 @@
+Release 10.1 Xflow K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+xflow.exe -wd implementation -p xc2vp30ff896-7 -implement xflow.opt system.ngc  
+PMSPEC -- Overriding Xilinx file <C:/Xilinx/10.1/EDK/virtex2p/data/virtex2p.acd>
+with local file <c:/Xilinx/10.1/ISE/virtex2p/data/virtex2p.acd>
+
+Using Flow File: I:/IIT/Process/edk/implementation/fpga.flw 
+Using Option File(s): 
+ I:/IIT/Process/edk/implementation/xflow.opt 
+
+Creating Script File ... 
+
+#----------------------------------------------#
+# Starting program ngdbuild
+# ngdbuild -p xc2vp30ff896-7 -nt timestamp -bm system.bmm
+"I:/IIT/Process/edk/implementation/system.ngc" -uc system.ucf system.ngd 
+#----------------------------------------------#
+Release 10.1 - ngdbuild K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file <C:/Xilinx/10.1/EDK/virtex2p/data/virtex2p.acd>
+with local file <c:/Xilinx/10.1/ISE/virtex2p/data/virtex2p.acd>
+
+Command Line: ngdbuild -p xc2vp30ff896-7 -nt timestamp -bm system.bmm
+I:/IIT/Process/edk/implementation/system.ngc -uc system.ucf system.ngd
+
+Reading NGO file "I:/IIT/Process/edk/implementation/system.ngc" ...
+Loading design module
+"I:/IIT/Process/edk/implementation/ppc405_0_wrapper.ngc"...
+Loading design module
+"I:/IIT/Process/edk/implementation/jtagppc_cntlr_0_wrapper.ngc"...
+Loading design module "I:/IIT/Process/edk/implementation/plb0_wrapper.ngc"...
+Loading design module
+"I:/IIT/Process/edk/implementation/xps_bram_if_cntlr_1_wrapper.ngc"...
+Loading design module
+"I:/IIT/Process/edk/implementation/plb_bram_if_cntlr_1_bram_wrapper.ngc"...
+Loading design module
+"I:/IIT/Process/edk/implementation/rs232_uart_1_wrapper.ngc"...
+Loading design module
+"I:/IIT/Process/edk/implementation/leds_4bit_wrapper.ngc"...
+Loading design module
+"I:/IIT/Process/edk/implementation/clock_generator_0_wrapper.ngc"...
+Loading design module
+"I:/IIT/Process/edk/implementation/proc_sys_reset_0_wrapper.ngc"...
+Loading design module "I:/IIT/Process/edk/implementation/forward_wrapper.ngc"...
+Loading design module
+"I:/IIT/Process/edk/implementation/backward_wrapper.ngc"...
+Loading design module
+"I:/IIT/Process/edk/implementation/motorseq_wrapper.ngc"...
+Loading design module "I:/IIT/Process/edk/implementation/halt_wrapper.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Applying constraints in "system.ucf" to the design...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd1-In_SW0_SW0_SW0"
+   (type=LUT4_L).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_request_int_or000024_SW0"
+   (type=LUT3_L).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/sample_cycl
+   e_or0000136" (type=LUT4_L).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/sample_cycl
+   e_or0000136" (type=LUT4_L).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd1-In_SW0_SW1"
+   (type=LUT3_L).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd7-In11"
+   (type=LUT4_D).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/dack_load_en" (type=LUT4_D).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Mcount_dack_cnt_eqn_2_SW0"
+   (type=LUT2_L).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd7-In_SW0"
+   (type=LUT3_L).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/clear_count
+   _p1562" (type=LUT4_L).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/clear_count
+   _p1562" (type=LUT4_L).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_minus
+   1_sub0000<4>_SW0" (type=LUT2_L).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Result<4>_SW0" (type=LUT2_L).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Result<4>1_SW0" (type=LUT2_L).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd2-In11"
+   (type=LUT2_D).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/Mcount_coun
+   t_cy<2>11" (type=LUT3_L).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/Mcount_new_
+   count_cy<2>11" (type=LUT3_L).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/Msub_ratio_
+   minus1_sub0000_cy<2>11" (type=LUT3_L).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/abort_qualified_SW0" (type=LUT3_L).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd1-In_SW0"
+   (type=LUT2_L).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_request_int_or00008_f5"
+   (type=MUXF5).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_request_int_or000081"
+   (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCUERR_reg_f5" (type=MUXF5).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCUERR_reg2" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCUERR_reg1" (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/Mcount_coun
+   t_xor<0>11_INV_0" (type=INV).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/Mcount_new_
+   count_xor<0>11_INV_0" (type=INV).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/Mcount_coun
+   t_xor<0>11_INV_0" (type=INV).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/Mcount_new_
+   count_xor<0>11_INV_0" (type=INV).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/abort_pending_inv1_INV_0"
+   (type=INV).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd4-In_SW0"
+   (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd1-In_SW0_SW0"
+   (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/Mcount_coun
+   t_xor<3>11" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/Mcount_new_
+   count_xor<3>11" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/Msub_ratio_
+   minus1_sub0000_xor<3>11" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_request_int_or000024"
+   (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/clear_count
+   _p1578" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/clear_count
+   _p1578" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/sample_cycl
+   e_or0000149" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/sample_cycl
+   e_or000050_SW0" (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/sample_cycl
+   e_or0000149" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/sample_cycl
+   e_or000050_SW0" (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd1-In"
+   (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd7-In1"
+   (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd6-In11"
+   (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/clk_1_to_1_
+   cmp_eq000011" (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/clk_1_to_1_
+   cmp_eq000011" (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_cmp_eq00001"
+   (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd1-In211"
+   (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/dack_load_en_SW0" (type=LUT2).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Mcount_dack_cnt_eqn_2" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Mcount_dack_cnt_eqn_11"
+   (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd2-In1"
+   (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd3-In1"
+   (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Mcount_dack_cnt_eqn_01"
+   (type=LUT2).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/dack_cnt_not0001" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/dack_cnt_not0001_SW0" (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/clear_count
+   _p1526" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/clear_count
+   _p1526" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/sample_cycl
+   e_or0000123" (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/sample_cycl
+   e_or000098" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/sample_cycl
+   e_or000035" (type=LUT2).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/sample_cycl
+   e_or000026" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/sample_cycl
+   e_or0000123" (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/sample_cycl
+   e_or000098" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/sample_cycl
+   e_or000035" (type=LUT2).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/sample_cycl
+   e_or000026" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd4-In"
+   (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_minus
+   1_sub0000<4>" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Result<4>"
+   (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Result<4>1"
+   (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/abort_pipe_not00011" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/read_pipe_not00011" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/Mcount_coun
+   t_xor<4>11" (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/Mcount_new_
+   count_xor<4>11" (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/Msub_ratio_
+   minus1_sub0000_xor<4>11" (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_request_or0000" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_request_or0000_SW0" (type=LUT2).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/abort_pending_or00001" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/read_pipe_or00001" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/clear_count
+   1" (type=LUT2).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/clear_count
+   1" (type=LUT2).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/abort_qualified" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd1-In"
+   (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/dack_cnt_not00011" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/dack_load_mux0000<0>" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/dack_load_mux0000<1>" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/dack_load_mux0000<1>_SW0"
+   (type=LUT2).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Mcount_dack_cnt_xor<1>11"
+   (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd2-In1"
+   (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCUBUSY1" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCURDDACK1" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLB_MRdErr_reg_and00001"
+   (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_minus
+   1_sub0000<3>1" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Result<3>1"
+   (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Result<3>11"
+   (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd5-In1"
+   (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/Mcount_coun
+   t_xor<2>11" (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/Mcount_new_
+   count_xor<2>11" (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/Msub_ratio_
+   minus1_sub0000_xor<2>11" (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/Mcount_coun
+   t_xor<2>11" (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/Mcount_new_
+   count_xor<2>11" (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/Msub_ratio_
+   minus1_sub0000_xor<2>11" (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Mcount_dack_cnt_xor<0>11"
+   (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCURDWDADDR<1>1"
+   (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCURDWDADDR<2>1"
+   (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/Mcount_coun
+   t_xor<1>11" (type=LUT2).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/Mcount_new_
+   count_xor<1>11" (type=LUT2).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/Msub_ratio_
+   minus1_sub0000_xor<1>11" (type=LUT2).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/Mcount_coun
+   t_xor<1>11" (type=LUT2).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/Mcount_new_
+   count_xor<1>11" (type=LUT2).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/Msub_ratio_
+   minus1_sub0000_xor<1>11" (type=LUT2).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCUWRDACK1" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICUADDRACK1" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICUERR1" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICUERR_or00011" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICURDDACK1" (type=LUT4).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICURDWDADDR<1>1"
+   (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICURDWDADDR<2>1"
+   (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCUADDRACK1" (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCUSSIZE<1>1" (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICUBUSY1" (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICUSSIZE<1>1" (type=LUT3).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DB...>: No instances of type FFS
+   were found under block "ppc405_0/ppc405_0/DBGC405DEBUGHALT_i1" (type=LUT2).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/rnw_reg_not00011" (type=LUT2).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICURDWDADDR<3>1"
+   (type=LUT2).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/IP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/dack_load_not00011" (type=LUT2).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/PL...>: No instances of type FFS
+   were found under block "ppc405_0/ppc405_0/PLBC405DCUBUSY_fat1" (type=LUT2).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[0].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[1].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[2].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[3].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[4].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[5].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[6].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[7].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[8].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[9].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[10].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[11].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[12].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[13].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[14].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[15].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[16].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[17].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[18].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[19].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[20].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[21].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[22].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[23].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[24].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[25].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[26].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[27].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[28].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[29].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[30].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[31].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[32].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[33].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[34].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[35].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[36].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[37].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[38].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[39].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[40].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[41].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[42].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[43].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[44].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[45].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[46].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[47].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[48].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[49].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[50].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[51].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[52].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[53].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[54].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[55].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[56].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[57].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[58].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[59].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[60].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[61].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[62].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/DP...>: No instances of type FFS
+   were found under block
+   "ppc405_0/ppc405_0/DPLB0_WRDBUS_buf_gen[63].DPLB0_WRDBUS_buf" (type=BUF).
+
+WARNING:ConstraintSystem:135 - Constraint <INST: UniqueName:
+   /system/EXPANDED/system/ppc405_0/ppc405_0\/PP...>: No instances of type FFS
+   were found under block "ppc405_0/ppc405_0/PPC405_i/PPC405_i" (type=PPC405).
+
+Done...
+Checking Partitions ...
+
+Processing BMM file ...
+
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_
+   ATTACH/I_DBEAT_CONTROL/I_DBEAT_CNTR/STRUCTURAL_A_GEN.I_ADDSUB_GEN[4].FDRE_I'
+   has unconnected output pin
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings: 194
+
+Writing NGD file "system.ngd" ...
+
+Writing NGDBUILD log file "system.bld"...
+
+NGDBUILD done.
+
+
+
+#----------------------------------------------#
+# Starting program map
+# map -o system_map.ncd -pr b -ol high -timing system.ngd system.pcf 
+#----------------------------------------------#
+Release 10.1 - Map K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file <C:/Xilinx/10.1/EDK/data/Xdh_PrimTypeLib.xda>
+with local file <c:/Xilinx/10.1/ISE/data/Xdh_PrimTypeLib.xda>
+Using target part "2vp30ff896-7".
+Mapping design into LUTs...
+Writing file system_map.ngm...
+Running directed packing...
+Running delay-based LUT packing...
+Running timing-driven packing...
+
+Phase 1.1
+Phase 1.1 (Checksum:9904bf) REAL time: 3 secs 
+
+Phase 2.7
+Phase 2.7 (Checksum:1312cfe) REAL time: 3 secs 
+
+Phase 3.31
+WARNING:Place:479 - Use of the left PPC405 has been detected. The left processor
+   requires special design considerations when operating above 350 MHz in the -7
+   speed grade part. Please see Xilinx Application Note XAPP755 for details.
+Phase 3.31 (Checksum:1c9c37d) REAL time: 3 secs 
+
+Phase 4.2
+
+
+Phase 4.2 (Checksum:26259fc) REAL time: 3 secs 
+
+Phase 5.30
+Phase 5.30 (Checksum:2faf07b) REAL time: 3 secs 
+
+Phase 6.3
+Phase 6.3 (Checksum:39386fa) REAL time: 3 secs 
+
+Phase 7.5
+Phase 7.5 (Checksum:42c1d79) REAL time: 3 secs 
+
+Phase 8.4
+........................................
+...........
+.......
+Phase 8.4 (Checksum:98dfff) REAL time: 26 secs 
+
+Phase 9.28
+Phase 9.28 (Checksum:55d4a77) REAL time: 26 secs 
+
+Phase 10.8
+........................................
+..............
+........
+.......
+Phase 10.8 (Checksum:cd68c3) REAL time: 27 secs 
+
+Phase 11.29
+Phase 11.29 (Checksum:68e7775) REAL time: 27 secs 
+
+Phase 12.5
+Phase 12.5 (Checksum:7270df4) REAL time: 27 secs 
+
+Phase 13.18
+Phase 13.18 (Checksum:7bfa473) REAL time: 31 secs 
+
+Phase 14.5
+Phase 14.5 (Checksum:8583af2) REAL time: 31 secs 
+
+Phase 15.27
+Phase 15.27 (Checksum:8f0d171) REAL time: 31 secs 
+
+Phase 16.24
+Phase 16.24 (Checksum:98967f0) REAL time: 31 secs 
+
+REAL time consumed by placer: 31 secs 
+CPU  time consumed by placer: 31 secs 
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    9
+Logic Utilization:
+  Number of Slice Flip Flops:         1,051 out of  27,392    3%
+  Number of 4 input LUTs:               884 out of  27,392    3%
+Logic Distribution:
+  Number of occupied Slices:            862 out of  13,696    6%
+    Number of Slices containing only related logic:     862 out of     862 100%
+    Number of Slices containing unrelated logic:          0 out of     862   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         904 out of  27,392    3%
+    Number used as logic:               850
+    Number used as a route-thru:         20
+    Number used as Shift registers:      34
+  Number of bonded IOBs:                 22 out of     556    3%
+    IOB Flip Flops:                      10
+  Number of PPC405s:                      2 out of       2  100%
+  Number of JTAGPPCs:                     1 out of       1  100%
+  Number of RAMB16s:                      8 out of     136    5%
+  Number of BUFGMUXs:                     1 out of      16    6%
+  Number of DCMs:                         1 out of       8   12%
+
+Peak Memory Usage:  328 MB
+Total REAL time to MAP completion:  42 secs 
+Total CPU time to MAP completion:   42 secs 
+
+Mapping completed.
+See MAP report file "system_map.mrp" for details.
+
+
+
+#----------------------------------------------#
+# Starting program par
+# par -w -ol high system_map.ncd system.ncd system.pcf 
+#----------------------------------------------#
+Release 10.1 - par K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file <C:/Xilinx/10.1/EDK/data/parBmgr.acd> with local file
+<c:/Xilinx/10.1/ISE/data/parBmgr.acd>
+
+
+
+Constraints file: system.pcf.
+Loading device for application Rf_Device from file '2vp30.nph' in environment c:\Xilinx\10.1\ISE;C:\Xilinx\10.1\EDK.
+   "system" is an NCD, version 3.2, device xc2vp30, package ff896, speed -7
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
+Initializing voltage to 1.400 Volts. (default - Range: 1.400 to 1.600 Volts)
+
+INFO:Timing:3377 - Intersecting Constraints found and resolved.  For more information see the TSI report.
+
+Device speed data version:  "PRODUCTION 1.94 2008-01-09".
+
+
+
+Device Utilization Summary:
+
+   Number of BUFGMUXs                        1 out of 16      6%
+   Number of DCMs                            1 out of 8      12%
+   Number of External IOBs                  22 out of 556     3%
+      Number of LOCed IOBs                  22 out of 22    100%
+
+   Number of JTAGPPCs                        1 out of 1     100%
+   Number of PPC405s                         2 out of 2     100%
+   Number of RAMB16s                         8 out of 136     5%
+   Number of SLICEs                        862 out of 13696   6%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 5 secs 
+Finished initial Timing Analysis.  REAL time: 5 secs 
+
+Starting Router
+
+Phase 1: 7173 unrouted;       REAL time: 12 secs 
+
+Phase 2: 5886 unrouted;       REAL time: 12 secs 
+
+Phase 3: 1232 unrouted;       REAL time: 14 secs 
+
+Phase 4: 1232 unrouted; (0)      REAL time: 14 secs 
+
+Phase 5: 1232 unrouted; (0)      REAL time: 14 secs 
+
+Phase 6: 1232 unrouted; (0)      REAL time: 14 secs 
+
+Phase 7: 0 unrouted; (0)      REAL time: 15 secs 
+
+Phase 8: 0 unrouted; (0)      REAL time: 16 secs 
+
+Phase 9: 0 unrouted; (0)      REAL time: 16 secs 
+
+WARNING:Route:455 - CLK Net:sys_clk_pin_IBUFG may have excessive skew because 
+      5 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 17 secs 
+Total CPU time to Router completion: 17 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|           sys_clk_s |     BUFGMUX7S| No   |  807 |  0.255     |  1.250      |
++---------------------+--------------+------+------+------------+-------------+
+|   sys_clk_pin_IBUFG |         Local|      |    6 |  0.183     |  1.129      |
++---------------------+--------------+------+------+------------+-------------+
+|jtagppc_cntlr_0_0_JT |              |      |      |            |             |
+|            GC405TCK |         Local|      |    2 |  1.906     |  4.662      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+Timing Score: 0
+
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the constraint does not cover any paths or that it has no
+   requested value.
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+------------------------------------------------------------------------------------------------------
+  Constraint                                |  Check  | Worst Case |  Best Case | Timing |   Timing   
+                                            |         |    Slack   | Achievable | Errors |    Score   
+------------------------------------------------------------------------------------------------------
+  TS_clock_generator_0_clock_generator_0_DC | SETUP   |     2.488ns|     7.512ns|       0|           0
+  M0_CLK_OUT_0_ = PERIOD TIMEGRP         "c | HOLD    |     0.230ns|            |       0|           0
+  lock_generator_0_clock_generator_0_DCM0_C |         |            |            |        |            
+  LK_OUT_0_" TS_sys_clk_pin         HIGH 50 |         |            |            |        |            
+  %                                         |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | SETUP   |     7.206ns|     2.794ns|       0|           0
+  pin" 10 ns HIGH 50%                       | HOLD    |     0.560ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+  PATH "TS_RST1_path" TIG                   | SETUP   |         N/A|     3.003ns|     N/A|           0
+------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_sys_clk_pin
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_sys_clk_pin                 |     10.000ns|      2.794ns|      7.512ns|            0|            0|            5|         8560|
+| TS_clock_generator_0_clock_gen|     10.000ns|      7.512ns|          N/A|            0|            0|         8560|            0|
+| erator_0_DCM0_CLK_OUT_0_      |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the 
+   constraint does not cover any paths or that it has no requested value.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 22 secs 
+Total CPU time to PAR completion: 20 secs 
+
+Peak Memory Usage:  265 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 1
+Number of info messages: 2
+
+Writing design to file system.ncd
+
+
+
+PAR done!
+
+
+
+#----------------------------------------------#
+# Starting program post_par_trce
+# trce -e 3 -xml system.twx system.ncd system.pcf 
+#----------------------------------------------#
+Release 10.1 - Trace  (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+
+PMSPEC -- Overriding Xilinx file <C:/Xilinx/10.1/EDK/virtex2p/data/virtex2p.acd>
+with local file <c:/Xilinx/10.1/ISE/virtex2p/data/virtex2p.acd>
+Loading device for application Rf_Device from file '2vp30.nph' in environment
+c:\Xilinx\10.1\ISE;C:\Xilinx\10.1\EDK.
+   "system" is an NCD, version 3.2, device xc2vp30, package ff896, speed -7
+INFO:Timing:3377 - Intersecting Constraints found and resolved.  For more
+   information see the TSI report.
+--------------------------------------------------------------------------------
+Release 10.1 Trace  (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+trce -e 3 -xml system.twx system.ncd system.pcf
+
+
+Design file:              system.ncd
+Physical constraint file: system.pcf
+Device,speed:             xc2vp30,-7 (PRODUCTION 1.94 2008-01-09)
+Report level:             error report
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths
+   option. All paths that are not constrained will be reported in the
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on a
+   50 Ohm transmission line loading model.  For the details of this model, and
+   for more information on accounting for different loading conditions, please
+   see the device datasheet.
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover 8568 paths, 0 nets, and 5854 connections
+
+Design statistics:
+   Minimum period:   7.512ns (Maximum frequency: 133.120MHz)
+
+
+Analysis completed Tue Aug 13 13:56:26 2013
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 0
+Number of info messages: 3
+Total time: 3 secs 
+
+

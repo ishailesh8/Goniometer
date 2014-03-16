@@ -1,0 +1,10 @@
+E:\IIT\Process\app\app\bin\Release\app.exe.config
+E:\IIT\Process\app\app\bin\Release\app.exe
+E:\IIT\Process\app\app\bin\Release\app.pdb
+E:\IIT\Process\app\app\bin\Release\goniometer.dll
+E:\IIT\Process\app\app\bin\Release\goniometer.pdb
+E:\IIT\Process\app\app\obj\Release\app.NativeMethods.resources
+E:\IIT\Process\app\app\obj\Release\app.Properties.Resources.resources
+E:\IIT\Process\app\app\obj\Release\app.csproj.GenerateResource.Cache
+E:\IIT\Process\app\app\obj\Release\app.exe
+E:\IIT\Process\app\app\obj\Release\app.pdb

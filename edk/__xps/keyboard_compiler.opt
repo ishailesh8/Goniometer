@@ -1,0 +1,20 @@
+ppc405_0
+KEYBOARD_SOURCES = /cygdrive/d/Process/edk/keyboard.c 
+KEYBOARD_HEADERS = 
+KEYBOARD_CC = powerpc-eabi-gcc
+KEYBOARD_CC_SIZE = powerpc-eabi-size
+KEYBOARD_CC_OPT = -O2
+KEYBOARD_CFLAGS = 
+KEYBOARD_CC_SEARCH = # -B
+KEYBOARD_LIBPATH = -L./ppc405_0/lib/ # -L
+KEYBOARD_INCLUDES = -I./ppc405_0/include/ # -I
+KEYBOARD_LFLAGS = # -l
+KEYBOARD_LINKER_SCRIPT = /cygdrive/d/Process/edk/keyboard/keyboard_linker_script.ld
+KEYBOARD_CC_DEBUG_FLAG =  -g 
+KEYBOARD_CC_PROFILE_FLAG = # -pg
+KEYBOARD_CC_GLOBPTR_FLAG= # -msdata=eabi
+KEYBOARD_CC_INFERRED_FLAGS= 
+KEYBOARD_CC_START_ADDR_FLAG=  #  # -Wl,-defsym -Wl,_START_ADDR=
+KEYBOARD_CC_STACK_SIZE_FLAG=  #  # -Wl,-defsym -Wl,_STACK_SIZE=
+KEYBOARD_CC_HEAP_SIZE_FLAG=  #  # -Wl,-defsym -Wl,_HEAP_SIZE=
+                  $(KEYBOARD_CC_INFERRED_FLAGS)  \

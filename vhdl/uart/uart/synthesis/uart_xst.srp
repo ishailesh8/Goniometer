@@ -1,0 +1,364 @@
+Release 10.1.03 - xst K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> PMSPEC -- Overriding Xilinx file <C:/Xilinx/10.1/EDK/virtex2p/data/virtex2p.acd> with local file <c:/Xilinx/10.1/ISE/virtex2p/data/virtex2p.acd>
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "uart_xst.prj"
+
+---- Target Parameters
+Target Device                      : xc2vp30ff896-7
+Output File Name                   : "../implementation/uart.ngc"
+
+---- Source Options
+Top Module Name                    : uart
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 10000
+
+---- General Options
+Optimization Goal                  : speed
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/DELL/Desktop/Motor_New/motor_new/uart/uart/hdl/uart.vhd" in Library work.
+Entity <uart> compiled.
+Entity <uart> (Architecture <STRUCTURE>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <uart> in library <work> (architecture <STRUCTURE>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <uart> in library <work> (Architecture <STRUCTURE>).
+Entity <uart> analyzed. Unit <uart> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <uart>.
+    Related source file is "C:/Users/DELL/Desktop/Motor_New/motor_new/uart/uart/hdl/uart.vhd".
+Unit <uart> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../implementation/ppc405_0_wrapper.ngc>.
+Reading core <../implementation/jtagppc_cntlr_0_wrapper.ngc>.
+Reading core <../implementation/plb0_wrapper.ngc>.
+Reading core <../implementation/xps_bram_if_cntlr_1_wrapper.ngc>.
+Reading core <../implementation/plb_bram_if_cntlr_1_bram_wrapper.ngc>.
+Reading core <../implementation/rs232_uart_1_wrapper.ngc>.
+Reading core <../implementation/clock_generator_0_wrapper.ngc>.
+Reading core <../implementation/proc_sys_reset_0_wrapper.ngc>.
+Loading core <ppc405_0_wrapper> for timing and area information for instance <ppc405_0>.
+Loading core <jtagppc_cntlr_0_wrapper> for timing and area information for instance <jtagppc_cntlr_0>.
+Loading core <plb0_wrapper> for timing and area information for instance <plb0>.
+Loading core <xps_bram_if_cntlr_1_wrapper> for timing and area information for instance <xps_bram_if_cntlr_1>.
+Loading core <plb_bram_if_cntlr_1_bram_wrapper> for timing and area information for instance <plb_bram_if_cntlr_1_bram>.
+Loading core <rs232_uart_1_wrapper> for timing and area information for instance <RS232_Uart_1>.
+Loading core <clock_generator_0_wrapper> for timing and area information for instance <clock_generator_0>.
+Loading core <proc_sys_reset_0_wrapper> for timing and area information for instance <proc_sys_reset_0>.
+Loading device for application Rf_Device from file '2vp30.nph' in environment c:\Xilinx\10.1\ISE;C:\Xilinx\10.1\EDK.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <uart> ...
+
+Mapping all equations...
+WARNING:Xst:1513 - No elements found for TNM 'FFS : ppc405_0_WRAPPER' on object 'ppc405_0/ppc405_0/PPC405_i/PPC405_i'.
+Building and optimizing final netlist ...
+INFO:Xst:2260 - The FF/Latch <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1> in Unit <plb0> is equivalent to the following 2 FFs/Latches : <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1> <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2> 
+INFO:Xst:2260 - The FF/Latch <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbWrDBusBusyReg_i> in Unit <plb0> is equivalent to the following FF/Latch : <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbWrDBusBusyReg_i_1> 
+INFO:Xst:2260 - The FF/Latch <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbSecWrInProgReg_i> in Unit <plb0> is equivalent to the following FF/Latch : <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbSecWrInProgReg_i_1> 
+INFO:Xst:2260 - The FF/Latch <plb0/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <plb0> is equivalent to the following 4 FFs/Latches : <plb0/GEN_MPLB_RST[0].I_MPLB_RST> <plb0/GEN_SPLB_RST[1].I_SPLB_RST> <plb0/GEN_SPLB_RST[0].I_SPLB_RST> <plb0/I_PLB_RST> 
+INFO:Xst:2260 - The FF/Latch <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0> in Unit <plb0> is equivalent to the following 2 FFs/Latches : <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1> <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2> 
+INFO:Xst:2260 - The FF/Latch <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_SET_SLBUSY> in Unit <xps_bram_if_cntlr_1> is equivalent to the following FF/Latch : <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_ADDRACK> 
+INFO:Xst:2260 - The FF/Latch <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_WRACK> in Unit <xps_bram_if_cntlr_1> is equivalent to the following FF/Latch : <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_WRACK_2BUS> 
+INFO:Xst:2260 - The FF/Latch <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1> in Unit <plb0> is equivalent to the following 2 FFs/Latches : <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1> <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2> 
+INFO:Xst:2260 - The FF/Latch <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbWrDBusBusyReg_i> in Unit <plb0> is equivalent to the following FF/Latch : <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbWrDBusBusyReg_i_1> 
+INFO:Xst:2260 - The FF/Latch <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbSecWrInProgReg_i> in Unit <plb0> is equivalent to the following FF/Latch : <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbSecWrInProgReg_i_1> 
+INFO:Xst:2260 - The FF/Latch <plb0/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <plb0> is equivalent to the following 4 FFs/Latches : <plb0/GEN_MPLB_RST[0].I_MPLB_RST> <plb0/GEN_SPLB_RST[1].I_SPLB_RST> <plb0/GEN_SPLB_RST[0].I_SPLB_RST> <plb0/I_PLB_RST> 
+INFO:Xst:2260 - The FF/Latch <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0> in Unit <plb0> is equivalent to the following 2 FFs/Latches : <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1> <plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2> 
+INFO:Xst:2260 - The FF/Latch <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_SET_SLBUSY> in Unit <xps_bram_if_cntlr_1> is equivalent to the following FF/Latch : <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_ADDRACK> 
+INFO:Xst:2260 - The FF/Latch <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_WRACK> in Unit <xps_bram_if_cntlr_1> is equivalent to the following FF/Latch : <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_WRACK_2BUS> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/uart.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 11
+
+Cell Usage :
+# BELS                             : 1206
+#      BUF                         : 64
+#      GND                         : 8
+#      INV                         : 34
+#      LUT1                        : 33
+#      LUT2                        : 188
+#      LUT2_D                      : 5
+#      LUT2_L                      : 5
+#      LUT3                        : 213
+#      LUT3_D                      : 6
+#      LUT3_L                      : 10
+#      LUT4                        : 418
+#      LUT4_D                      : 11
+#      LUT4_L                      : 21
+#      MUXCY                       : 98
+#      MUXCY_L                     : 16
+#      MUXF5                       : 14
+#      VCC                         : 7
+#      XORCY                       : 55
+# FlipFlops/Latches                : 828
+#      FD                          : 155
+#      FDE                         : 47
+#      FDP                         : 4
+#      FDR                         : 311
+#      FDRE                        : 233
+#      FDRS                        : 10
+#      FDRSE                       : 5
+#      FDS                         : 46
+#      FDSE                        : 17
+# RAMS                             : 16
+#      RAMB16_S4_S4                : 16
+# Shift Registers                  : 24
+#      SRL16                       : 5
+#      SRL16E                      : 19
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 11
+#      IBUF                        : 2
+#      IBUFG                       : 1
+#      OBUF                        : 8
+# DCMs                             : 1
+#      DCM                         : 1
+# Others                           : 4
+#      JTAGPPC                     : 1
+#      PPC405                      : 2
+#      TIMEGRP                     : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 2vp30ff896-7 
+
+ Number of Slices:                      705  out of  13696     5%  
+ Number of Slice Flip Flops:            828  out of  27392     3%  
+ Number of 4 input LUTs:                968  out of  27392     3%  
+    Number used as logic:               944
+    Number used as Shift registers:      24
+ Number of IOs:                          11
+ Number of bonded IOBs:                  11  out of    556     1%  
+ Number of BRAMs:                        16  out of    136    11%  
+ Number of GCLKs:                         1  out of     16     6%  
+ Number of PPC405s:                       2  out of      2   100%  
+ Number of DCMs:                          1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                     | Load  |
+-----------------------------------+---------------------------------------------------------------------------+-------+
+sys_clk_pin                        | clock_generator_0/Using_DCM0.DCM0_INST/DCM_INST/Using_Virtex.DCM_INST:CLK0| 852   |
+-----------------------------------+---------------------------------------------------------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+-----------------------------------+-------+
+Control Signal                     | Buffer(FF name)                   | Load  |
+-----------------------------------+-----------------------------------+-------+
+fpga_0_net_gnd_pin_OBUF(XST_GND:G) | NONE(clock_generator_0/RST_shift1)| 4     |
+-----------------------------------+-----------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -7
+
+   Minimum period: 4.807ns (Maximum Frequency: 208.038MHz)
+   Minimum input arrival time before clock: 2.024ns
+   Maximum output required time after clock: 3.293ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'sys_clk_pin'
+  Clock period: 4.807ns (frequency: 208.038MHz)
+  Total number of paths / destination ports: 7336 / 1688
+-------------------------------------------------------------------------
+Delay:               4.807ns (Levels of Logic = 6)
+  Source:            plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1 (FF)
+  Destination:       ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_request_int (FF)
+  Source Clock:      sys_clk_pin rising
+  Destination Clock: sys_clk_pin rising
+
+  Data Path: plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1 to ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_request_int
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q           114   0.370   0.924  plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1 (plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i<1>)
+     LUT3:I0->O           12   0.275   0.657  plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_MUXEDSIGNALS/PLB_MAddrAck_1_and00001 (PLB_MAddrAck<1>)
+     end scope: 'plb0'
+     begin scope: 'ppc405_0'
+     LUT4:I0->O            1   0.275   0.000  ppc405_0/IPLB0_PLBv46_Adapter_i/M_request_int_or000061 (ppc405_0/IPLB0_PLBv46_Adapter_i/M_request_int_or000061)
+     MUXF5:I0->O           1   0.303   0.467  ppc405_0/IPLB0_PLBv46_Adapter_i/M_request_int_or00006_f5 (ppc405_0/IPLB0_PLBv46_Adapter_i/M_request_int_or00006)
+     LUT3_L:I0->LO         1   0.275   0.118  ppc405_0/IPLB0_PLBv46_Adapter_i/M_request_int_or000020_SW0 (N39)
+     LUT4:I2->O            1   0.275   0.331  ppc405_0/IPLB0_PLBv46_Adapter_i/M_request_int_or000020 (ppc405_0/IPLB0_PLBv46_Adapter_i/M_request_int_or0000)
+     FDRS:R                    0.536          ppc405_0/IPLB0_PLBv46_Adapter_i/M_request_int
+    ----------------------------------------
+    Total                      4.807ns (2.309ns logic, 2.498ns route)
+                                       (48.0% logic, 52.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'sys_clk_pin'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              2.024ns (Levels of Logic = 3)
+  Source:            sys_rst_pin (PAD)
+  Destination:       proc_sys_reset_0/proc_sys_reset_0/EXT_LPF/exr_d1 (FF)
+  Destination Clock: sys_clk_pin rising
+
+  Data Path: sys_rst_pin to proc_sys_reset_0/proc_sys_reset_0/EXT_LPF/exr_d1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.878   0.331  sys_rst_pin_IBUF (sys_rst_pin_IBUF)
+     begin scope: 'proc_sys_reset_0'
+     INV:I->O              1   0.275   0.331  proc_sys_reset_0/EXT_LPF/exr_d1_or000011_INV_0 (proc_sys_reset_0/EXT_LPF/exr_d1_or00001)
+     FDS:D                     0.208          proc_sys_reset_0/EXT_LPF/exr_d1
+    ----------------------------------------
+    Total                      2.024ns (1.361ns logic, 0.663ns route)
+                                       (67.2% logic, 32.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'sys_clk_pin'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.293ns (Levels of Logic = 2)
+  Source:            RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/TX (FF)
+  Destination:       fpga_0_RS232_Uart_1_TX_pin (PAD)
+  Source Clock:      sys_clk_pin rising
+
+  Data Path: RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/TX to fpga_0_RS232_Uart_1_TX_pin
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              1   0.370   0.332  RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/TX (TX)
+     end scope: 'RS232_Uart_1'
+     OBUF:I->O                 2.592          fpga_0_RS232_Uart_1_TX_pin_OBUF (fpga_0_RS232_Uart_1_TX_pin)
+    ----------------------------------------
+    Total                      3.293ns (2.962ns logic, 0.332ns route)
+                                       (89.9% logic, 10.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.57 secs
+ 
+--> 
+
+Total memory usage is 273240 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :   14 (   0 filtered)
+

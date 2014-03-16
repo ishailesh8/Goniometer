@@ -1,0 +1,20 @@
+ppc405_0
+GUI_SOURCES = /cygdrive/d/Process/edk/gui.c 
+GUI_HEADERS = 
+GUI_CC = powerpc-eabi-gcc
+GUI_CC_SIZE = powerpc-eabi-size
+GUI_CC_OPT = -O2
+GUI_CFLAGS = 
+GUI_CC_SEARCH = # -B
+GUI_LIBPATH = -L./ppc405_0/lib/ # -L
+GUI_INCLUDES = -I./ppc405_0/include/ # -I
+GUI_LFLAGS = # -l
+GUI_LINKER_SCRIPT = /cygdrive/d/Process/edk/gui/gui_linker_script.ld
+GUI_CC_DEBUG_FLAG =  -g 
+GUI_CC_PROFILE_FLAG = # -pg
+GUI_CC_GLOBPTR_FLAG= # -msdata=eabi
+GUI_CC_INFERRED_FLAGS= 
+GUI_CC_START_ADDR_FLAG=  #  # -Wl,-defsym -Wl,_START_ADDR=
+GUI_CC_STACK_SIZE_FLAG=  #  # -Wl,-defsym -Wl,_STACK_SIZE=
+GUI_CC_HEAP_SIZE_FLAG=  #  # -Wl,-defsym -Wl,_HEAP_SIZE=
+                  $(GUI_CC_INFERRED_FLAGS)  \

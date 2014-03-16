@@ -1,0 +1,20 @@
+ppc405_0
+DIPSWITCH_SOURCES = /cygdrive/d/Process/edk/dipswitch.c 
+DIPSWITCH_HEADERS = 
+DIPSWITCH_CC = powerpc-eabi-gcc
+DIPSWITCH_CC_SIZE = powerpc-eabi-size
+DIPSWITCH_CC_OPT = -O2
+DIPSWITCH_CFLAGS = 
+DIPSWITCH_CC_SEARCH = # -B
+DIPSWITCH_LIBPATH = -L./ppc405_0/lib/ # -L
+DIPSWITCH_INCLUDES = -I./ppc405_0/include/ # -I
+DIPSWITCH_LFLAGS = # -l
+DIPSWITCH_LINKER_SCRIPT = /cygdrive/d/Process/edk/dipswitch/dipswitch_linker_script.ld
+DIPSWITCH_CC_DEBUG_FLAG =  -g 
+DIPSWITCH_CC_PROFILE_FLAG = # -pg
+DIPSWITCH_CC_GLOBPTR_FLAG= # -msdata=eabi
+DIPSWITCH_CC_INFERRED_FLAGS= 
+DIPSWITCH_CC_START_ADDR_FLAG=  #  # -Wl,-defsym -Wl,_START_ADDR=
+DIPSWITCH_CC_STACK_SIZE_FLAG=  #  # -Wl,-defsym -Wl,_STACK_SIZE=
+DIPSWITCH_CC_HEAP_SIZE_FLAG=  #  # -Wl,-defsym -Wl,_HEAP_SIZE=
+                  $(DIPSWITCH_CC_INFERRED_FLAGS)  \

@@ -1,0 +1,14 @@
+I:\IIT\Process\goniometer\goniometer\goniometer\obj\Debug\goniometer.csprojResolveAssemblyReference.cache
+I:\IIT\Process\goniometer\goniometer\goniometer\bin\Debug\goniometer.dll
+I:\IIT\Process\goniometer\goniometer\goniometer\bin\Debug\goniometer.pdb
+I:\IIT\Process\goniometer\goniometer\goniometer\obj\Debug\goniometer.dll
+I:\IIT\Process\goniometer\goniometer\goniometer\obj\Debug\goniometer.pdb
+I:\IIT\Process\dll\goniometer\bin\Debug\goniometer.dll
+I:\IIT\Process\dll\goniometer\bin\Debug\goniometer.pdb
+I:\IIT\Process\dll\goniometer\obj\Debug\goniometer.csprojResolveAssemblyReference.cache
+I:\IIT\Process\dll\goniometer\obj\Debug\goniometer.dll
+I:\IIT\Process\dll\goniometer\obj\Debug\goniometer.pdb
+D:\Process\dll\goniometer\bin\Debug\goniometer.dll
+D:\Process\dll\goniometer\bin\Debug\goniometer.pdb
+D:\Process\dll\goniometer\obj\Debug\goniometer.dll
+D:\Process\dll\goniometer\obj\Debug\goniometer.pdb

@@ -1,0 +1,3 @@
+MODULE dcm_tbw
+SUBMODULE motor_state
+INSTANCE UUT

@@ -1,0 +1,3017 @@
+//! **************************************************************************
+// Written by: Map K.31 on Tue Aug 13 13:55:55 2013
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "fpga_0_net_gnd_1_pin" LOCATE = SITE "D15" LEVEL 1;
+COMP "fpga_0_net_gnd_2_pin" LOCATE = SITE "E15" LEVEL 1;
+COMP "fpga_0_net_gnd_3_pin" LOCATE = SITE "G10" LEVEL 1;
+COMP "fpga_0_net_gnd_4_pin" LOCATE = SITE "E10" LEVEL 1;
+COMP "fpga_0_net_gnd_5_pin" LOCATE = SITE "G8" LEVEL 1;
+COMP "fpga_0_net_gnd_6_pin" LOCATE = SITE "H9" LEVEL 1;
+COMP "fpga_0_LEDs_4Bit_GPIO_IO_pin<0>" LOCATE = SITE "AC4" LEVEL 1;
+COMP "fpga_0_LEDs_4Bit_GPIO_IO_pin<1>" LOCATE = SITE "AC3" LEVEL 1;
+COMP "fpga_0_LEDs_4Bit_GPIO_IO_pin<2>" LOCATE = SITE "AA6" LEVEL 1;
+COMP "fpga_0_LEDs_4Bit_GPIO_IO_pin<3>" LOCATE = SITE "AA5" LEVEL 1;
+COMP "backward_GPIO_in_pin<0>" LOCATE = SITE "AD11" LEVEL 1;
+COMP "fpga_0_net_gnd_pin" LOCATE = SITE "G12" LEVEL 1;
+COMP "motorseq_GPIO_IO_O_pin<0>" LOCATE = SITE "N5" LEVEL 1;
+COMP "motorseq_GPIO_IO_O_pin<1>" LOCATE = SITE "L4" LEVEL 1;
+COMP "motorseq_GPIO_IO_O_pin<2>" LOCATE = SITE "N2" LEVEL 1;
+COMP "motorseq_GPIO_IO_O_pin<3>" LOCATE = SITE "R9" LEVEL 1;
+COMP "sys_clk_pin" LOCATE = SITE "AJ15" LEVEL 1;
+COMP "sys_rst_pin" LOCATE = SITE "AH5" LEVEL 1;
+COMP "halt_GPIO_in_pin<0>" LOCATE = SITE "AF9" LEVEL 1;
+COMP "fpga_0_RS232_Uart_1_RX_pin" LOCATE = SITE "AJ8" LEVEL 1;
+COMP "forward_GPIO_in_pin<0>" LOCATE = SITE "AC11" LEVEL 1;
+COMP "fpga_0_RS232_Uart_1_TX_pin" LOCATE = SITE "AE7" LEVEL 1;
+PIN
+        plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_0.A_pins<15>
+        = BEL
+        "plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_0.A"
+        PINNAME CLKA;
+PIN
+        plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_1.A_pins<15>
+        = BEL
+        "plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_1.A"
+        PINNAME CLKA;
+PIN
+        plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_2.A_pins<15>
+        = BEL
+        "plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_2.A"
+        PINNAME CLKA;
+PIN
+        plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_3.A_pins<15>
+        = BEL
+        "plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_3.A"
+        PINNAME CLKA;
+PIN
+        plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_4.A_pins<15>
+        = BEL
+        "plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_4.A"
+        PINNAME CLKA;
+PIN
+        plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_5.A_pins<15>
+        = BEL
+        "plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_5.A"
+        PINNAME CLKA;
+PIN
+        plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_6.A_pins<15>
+        = BEL
+        "plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_6.A"
+        PINNAME CLKA;
+PIN
+        plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_7.A_pins<15>
+        = BEL
+        "plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_7.A"
+        PINNAME CLKA;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<604> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME CPMC405CLOCK;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<992> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBCLK;
+TIMEGRP clock_generator_0_clock_generator_0_DCM0_CLK_OUT_0_ = PIN
+        "plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_0.A_pins<15>"
+        PIN
+        "plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_1.A_pins<15>"
+        PIN
+        "plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_2.A_pins<15>"
+        PIN
+        "plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_3.A_pins<15>"
+        PIN
+        "plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_4.A_pins<15>"
+        PIN
+        "plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_5.A_pins<15>"
+        PIN
+        "plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_6.A_pins<15>"
+        PIN
+        "plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_7.A_pins<15>"
+        BEL "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd8" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd7" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd6" BEL
+        "ppc405_0/ppc405_0/DCU_PLB_MRdWdAddr_reg_3" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/slow_clk_div2"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/clk_1_to_1"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_minus1_4"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/slow_clk_div2"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/clk_1_to_1"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_minus1_4"
+        BEL "ppc405_0/ppc405_0/DCU_PLB_MRdWdAddr_reg_2" BEL
+        "ppc405_0/ppc405_0/DCU_PLB_MRdWdAddr_reg_1" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDACK_reg" BEL
+        "ppc405_0/ppc405_0/PLBC405DCUBUSY_reg" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_63" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_62" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_61" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_60" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_59" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_58" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_57" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_56" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_55" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_54" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_53" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_52" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_51" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_50" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_49" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_48" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_47" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_46" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_45" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_44" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_43" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_42" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_41" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_40" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_39" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_38" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_37" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_36" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_35" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_34" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_33" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_32" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_31" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_30" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_29" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_28" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_27" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_26" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_25" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_24" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_23" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_22" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_21" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_20" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_19" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_18" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_17" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_16" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_15" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_14" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_13" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_12" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_11" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_10" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_9" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_8" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_7" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_6" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_5" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_4" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_3" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_2" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_1" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_0" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<604>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<992>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<604>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<992>" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd5" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd4" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd3" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd2" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd1" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/new_count_4"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/new_count_3"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/new_count_2"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/new_count_1"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/new_count_0"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/count_0"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/count_1"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/count_2"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/count_3"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/count_4"
+        BEL "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/dack_cnt_0" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/dack_cnt_1" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/dack_cnt_2" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/slow_clk_div2_del"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_4"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_3"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_2"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_1"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_0"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/sample_cycle"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_minus1_3"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_minus1_2"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_minus1_1"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_minus1_0"
+        BEL "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/abort_pending_dly" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_size_save_2" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_size_save_3" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_0" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_1" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_2" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_3" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_4" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_5" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_6" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_7" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_8" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_9" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_10" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_11" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_12" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_13" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_14" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_15" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_16" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_17" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_18" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_19" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_20" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_21" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_22" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_23" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_24" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_25" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_26" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_27" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_28" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_29" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_request_int" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_priority_save_0" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_priority_save_1" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/abort_pending" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/dack_load_0" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/dack_load_1" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/abort_pipe" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/read_pipe" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/new_count_4"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/new_count_3"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/new_count_2"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/new_count_0"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/new_count_1"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/count_0"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/count_1"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/count_2"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/count_3"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/count_4"
+        BEL "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/dack_cnt_0" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/dack_cnt_1" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/slow_clk_div2_del"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_4"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_3"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_2"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_1"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_0"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/sample_cycle"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_minus1_3"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_minus1_2"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_minus1_1"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_minus1_0"
+        BEL "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd2" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd1" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLB_MRdErr_reg" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_0" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_1" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_2" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_3" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_4" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_5" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_6" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_7" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_8" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_9" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_10" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_11" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_12" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_13" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_14" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_15" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_16" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_17" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_18" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_19" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_20" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_21" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_22" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_23" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_24" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_25" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_26" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_27" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_28" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_29" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_RNW" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/int_C405PLBDCUBE_0" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/int_C405PLBDCUBE_1" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/int_C405PLBDCUBE_2" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/int_C405PLBDCUBE_3" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/int_C405PLBDCUBE_4" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/int_C405PLBDCUBE_5" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/int_C405PLBDCUBE_6" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/int_C405PLBDCUBE_7" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_request" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_priority_0" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_priority_1" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_size_2" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/rnw_reg" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbSecWrInProgReg_i_1"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/pavalid_i"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/WrBurst_Mux_Idle_reg"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbRdDBusBusyReg_i"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbWrDBusBusyReg_i"
+        BEL "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_MSize_1" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_size_3" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_size_2" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_BE_7" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_BE_6" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_BE_5" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_BE_4" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_BE_3" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_BE_2" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_BE_1" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_BE_0" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_29" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_28" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_27" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_26" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_25" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_24" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_23" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_22" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_21" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_20" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_19" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_18" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_17" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_16" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_15" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_14" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_13" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_12" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_11" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_10" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_9" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_8" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_7" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_6" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_5" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_4" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_3" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_2" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_1" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ADDRPATH/PLB_ABus_0" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/PrevTrnsReArb"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbSecWrInProgReg_i"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbSecRdMasterReg_i_1"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbSecRdMasterReg_i_0"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/ArbDisMReqReg_1"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/ArbDisMReqReg_0"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbSecRdInProgReg_i"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbSecWrMasterReg_i_0"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/savalid_reg"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/ArbPriWrMasterReg_0"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbPriRdMasterReg_i_1"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbPriRdMasterReg_i_0"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/ArbPriRdMasterRegReg_1"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/ArbPriRdMasterRegReg_0"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd1"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd4"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd5"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd6"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd7"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd8"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_WDT/WDT_TIMEOUT_CNTR_I/cnt_0"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_WDT/WDT_TIMEOUT_CNTR_I/cnt_1"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_WDT/WDT_TIMEOUT_CNTR_I/cnt_2"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_WDT/WDT_TIMEOUT_CNTR_I/cnt_3"
+        BEL "plb0/plb0/I_PLB_RST" BEL "plb0/plb0/GEN_SPLB_RST[0].I_SPLB_RST"
+        BEL "plb0/plb0/GEN_SPLB_RST[1].I_SPLB_RST" BEL
+        "plb0/plb0/GEN_SPLB_RST[2].I_SPLB_RST" BEL
+        "plb0/plb0/GEN_SPLB_RST[3].I_SPLB_RST" BEL
+        "plb0/plb0/GEN_SPLB_RST[4].I_SPLB_RST" BEL
+        "plb0/plb0/GEN_SPLB_RST[5].I_SPLB_RST" BEL
+        "plb0/plb0/GEN_SPLB_RST[6].I_SPLB_RST" BEL
+        "plb0/plb0/GEN_MPLB_RST[0].I_MPLB_RST" BEL
+        "plb0/plb0/GEN_MPLB_RST[1].I_MPLB_RST" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1"
+        BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0"
+        BEL "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_WDT/wdtMTimeout_n_i"
+        BEL "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/PLB_masterID_0" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/PLB_RNW" BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/arbreset_i" BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_req_reg"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_mst_id_0"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/doing_cacheln_reg"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/bus2ip_cs_i"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_req_reg"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/doing_single_reg"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_sl_busy"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_63"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_62"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_61"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_60"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_59"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_58"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_57"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_56"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_55"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_54"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_53"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_52"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_51"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_50"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_49"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_48"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_47"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_46"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_45"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_44"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_43"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_42"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_41"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_40"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_39"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_38"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_37"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_36"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_35"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_34"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_33"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_32"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_31"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_30"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_29"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_28"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_27"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_26"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_25"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_24"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_23"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_22"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_21"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_20"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_19"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_18"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_17"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_16"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_15"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_14"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_13"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_12"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_11"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_10"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_9"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_8"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_7"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_6"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_5"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_4"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_3"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_2"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_1"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_dreg_0"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sl_mbusy_i_0"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sl_mbusy_i_1"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_steer_addr_reg_3"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_steer_addr_reg_2"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_steer_addr_reg_1"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sl_rdwdaddr_i_1"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sl_rdwdaddr_i_2"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sl_rdwdaddr_i_3"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_63"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_62"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_61"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_60"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_59"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_58"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_57"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_56"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_55"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_54"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_53"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_52"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_51"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_50"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_49"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_48"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_47"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_46"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_45"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_44"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_43"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_42"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_41"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_40"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_39"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_38"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_37"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_36"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_35"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_34"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_33"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_32"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_31"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_30"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_29"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_28"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_27"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_26"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_25"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_24"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_23"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_22"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_21"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_20"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_19"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_18"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_17"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_16"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_15"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_14"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_13"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_12"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_11"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_10"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_9"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_8"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_7"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_6"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_5"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_4"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_3"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_2"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_1"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_dreg_0"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_REARB"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_ADDRACK"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_SET_SLBUSY"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_CLR_SL_BUSY"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_WRACK_2BUS"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_WRACK"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_WREN"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_RDACK_2BUS"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_RDACK_EARLY1"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_RDACK_EARLY2"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_RDCOMP"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_addr_cntr_18"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_addr_cntr_19"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_addr_cntr_20"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_addr_cntr_21"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_addr_cntr_22"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_addr_cntr_23"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_addr_cntr_24"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_addr_cntr_25"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_addr_cntr_26"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_addr_cntr_27"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_addr_cntr_28"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_addr_cntr_29"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/cline_inc_value_s_h_0"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/cline_inc_value_s_h_1"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/flbrst_inc_value_s_h_0"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/flbrst_inc_value_s_h_1"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/words_s_h"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/cacheln_4_s_h"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/cacheln_8_s_h"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/single_s_h"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_be_in_s_h_0"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_be_in_s_h_1"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_be_in_s_h_2"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_be_in_s_h_3"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_be_in_s_h_4"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_be_in_s_h_5"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_be_in_s_h_6"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_be_in_s_h_7"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_cline_slice_cntr_0"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_cline_slice_cntr_1"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_cline_slice_cntr_2"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/rnw_s_h"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_DBEAT_CONTROL/I_DBEAT_CNTR/STRUCTURAL_A_GEN.I_ADDSUB_GEN[0].FDRE_I"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_DBEAT_CONTROL/I_DBEAT_CNTR/STRUCTURAL_A_GEN.I_ADDSUB_GEN[1].FDRE_I"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_DBEAT_CONTROL/I_DBEAT_CNTR/STRUCTURAL_A_GEN.I_ADDSUB_GEN[2].FDRE_I"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_DBEAT_CONTROL/I_DBEAT_CNTR/STRUCTURAL_A_GEN.I_ADDSUB_GEN[3].FDRE_I"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_DBEAT_CONTROL/mult_cnt_sreg_1"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_DBEAT_CONTROL/dbeat_cnt_done"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_DBEAT_CONTROL/mult_cnt_sreg_0"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_DBEAT_CONTROL/almst_done_comp_value_reg_1"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_DBEAT_CONTROL/almst_done_comp_value_reg_3"
+        BEL
+        "xps_bram_if_cntlr_1/xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_DBEAT_CONTROL/dbeat_cnt_almst_done"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/sl_wrcomp_i"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/rd_clear_sl_busy"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_7"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_6"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_5"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_4"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_3"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_2"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_1"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_0"
+        BEL "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/clr_Status" BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/enable_interrupts" BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/reset_TX_FIFO" BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/reset_RX_FIFO" BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/status_Reg_1" BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/status_Reg_2" BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/BAUD_RATE_I/EN_16x_Baud"
+        BEL "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/BAUD_RATE_I/Count_0"
+        BEL "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/BAUD_RATE_I/Count_3"
+        BEL "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/BAUD_RATE_I/Count_1"
+        BEL "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/BAUD_RATE_I/Count_2"
+        BEL "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/BAUD_RATE_I/Count_6"
+        BEL "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/BAUD_RATE_I/Count_4"
+        BEL "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/BAUD_RATE_I/Count_5"
+        BEL "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/BAUD_RATE_I/Count_9"
+        BEL "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/BAUD_RATE_I/Count_7"
+        BEL "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/BAUD_RATE_I/Count_8"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/CNTR_INCR_DECR_ADDN_F_I/STRUCTURAL_A_GEN.Addr_Counters[4].FDS_I"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/CNTR_INCR_DECR_ADDN_F_I/STRUCTURAL_A_GEN.Addr_Counters[3].FDS_I"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/CNTR_INCR_DECR_ADDN_F_I/STRUCTURAL_A_GEN.Addr_Counters[2].FDS_I"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/CNTR_INCR_DECR_ADDN_F_I/STRUCTURAL_A_GEN.Addr_Counters[1].FDS_I"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/CNTR_INCR_DECR_ADDN_F_I/STRUCTURAL_A_GEN.Addr_Counters[0].FDS_I"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/Mshreg_RX_Data_7_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/Mshreg_RX_Data_6_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/Mshreg_RX_Data_4_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/Mshreg_RX_Data_3_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/Mshreg_RX_Data_5_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/Mshreg_RX_Data_1_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/Mshreg_RX_Data_0_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/Mshreg_RX_Data_2_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/Mshreg_mid_Start_Bit_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/Mshreg_sample_Point_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/FIFO_Full"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/fifo_Din_8"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/fifo_Din_7"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/fifo_Din_6"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/fifo_Din_5"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/fifo_Din_4"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/fifo_Din_3"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/fifo_Din_2"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/previous_RX"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/fifo_Din_1"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/running_0"
+        BEL "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/rx_2" BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/FIFO_Write"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/stop_Bit_Position"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/start_Edge_Detected_0"
+        BEL "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/rx_1" BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/CNTR_INCR_DECR_ADDN_F_I/STRUCTURAL_A_GEN.Addr_Counters[4].FDS_I"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/CNTR_INCR_DECR_ADDN_F_I/STRUCTURAL_A_GEN.Addr_Counters[3].FDS_I"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/CNTR_INCR_DECR_ADDN_F_I/STRUCTURAL_A_GEN.Addr_Counters[2].FDS_I"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/CNTR_INCR_DECR_ADDN_F_I/STRUCTURAL_A_GEN.Addr_Counters[1].FDS_I"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/CNTR_INCR_DECR_ADDN_F_I/STRUCTURAL_A_GEN.Addr_Counters[0].FDS_I"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/Mshreg_fifo_DOut_7_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/Mshreg_fifo_DOut_5_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/Mshreg_fifo_DOut_4_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/Mshreg_fifo_DOut_6_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/Mshreg_fifo_DOut_2_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/Mshreg_fifo_DOut_1_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/Mshreg_fifo_DOut_3_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/Mshreg_fifo_DOut_0_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/Mshreg_div16_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/mux_sel_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/mux_sel_1"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/mux_sel_2"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/FIFO_Full"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/tx_Data_Enable"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/serial_Data"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/tx_DataBits"
+        BEL "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/TX" BEL
+        "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/fifo_Read"
+        BEL "RS232_Uart_1/RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_TX_I/tx_Start"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_31"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_30"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_29"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_28"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_27"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_26"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_25"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_24"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_pavalid_reg"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/addr_cntl_cs_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_31"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_30"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_29"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_28"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_27"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_26"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_25"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_24"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_size_reg_3"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_size_reg_2"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/sl_mrderr_i_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_29"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_28"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_27"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_26"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_25"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_24"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_23"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_22"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_21"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_20"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_19"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_18"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_17"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_16"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_15"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_14"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_13"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_12"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_11"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_10"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_9"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_8"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_7"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_6"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_5"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_4"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_3"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_2"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_1"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/sl_mrderr_i_1"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/sl_rearbitrate_i"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/sl_mbusy_i_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_masterid_reg_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/plb_rnw_reg"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/sl_mbusy_i_1"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/set_sl_busy"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_rnw_i"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/data_timeout"
+        BEL "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/sl_busy"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/master_id_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_8"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/decode_hit_reg"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_3"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_2"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_3"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_1"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_2"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/addr_out_s_h_0"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/addr_out_s_h_1"
+        BEL
+        "RS232_Uart_1/RS232_Uart_1/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/rnw_s_h"
+        BEL "LEDs_4Bit/LEDs_4Bit/gpio_core_1/gpio_Data_In_3" BEL
+        "LEDs_4Bit/LEDs_4Bit/gpio_core_1/gpio_Data_In_2" BEL
+        "LEDs_4Bit/LEDs_4Bit/gpio_core_1/gpio_Data_In_1" BEL
+        "LEDs_4Bit/LEDs_4Bit/gpio_core_1/gpio_Data_In_0" BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/sl_wrcomp_i" BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/rd_clear_sl_busy" BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_7"
+        BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_6"
+        BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_5"
+        BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_4"
+        BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_3"
+        BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_2"
+        BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_1"
+        BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_0"
+        BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_31"
+        BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_30"
+        BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_29"
+        BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_28"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_pavalid_reg"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/addr_cntl_cs_0"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_31"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_30"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_29"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_28"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_size_reg_3"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_size_reg_2"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_29"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_27"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_26"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_25"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_24"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_23"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_22"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_21"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_20"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_19"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_18"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_17"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_16"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_15"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_14"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_13"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_12"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_11"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_10"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_9"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_8"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_7"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_6"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_5"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_4"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_3"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_2"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_1"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_0"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/sl_rearbitrate_i"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/sl_mbusy_i_0" BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_masterid_reg_0"
+        BEL "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_rnw_reg" BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/sl_mbusy_i_1" BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/plb_be_reg_3" BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/set_sl_busy" BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_rnw_i" BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/data_timeout" BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_3" BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_29" BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/sl_busy" BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/master_id_0" BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_8"
+        BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/decode_hit_reg"
+        BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0"
+        BEL
+        "LEDs_4Bit/LEDs_4Bit/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_s_h_0"
+        BEL "LEDs_4Bit/LEDs_4Bit/gpio_core_1/GPIO_DBus_i_30" BEL
+        "LEDs_4Bit/LEDs_4Bit/gpio_core_1/gpio_OE_2" BEL
+        "LEDs_4Bit/LEDs_4Bit/gpio_core_1/gpio_OE_3" BEL
+        "LEDs_4Bit/LEDs_4Bit/gpio_core_1/GPIO_DBus_i_31" BEL
+        "LEDs_4Bit/LEDs_4Bit/gpio_core_1/GPIO_DBus_i_28" BEL
+        "LEDs_4Bit/LEDs_4Bit/gpio_core_1/GPIO_DBus_i_29" BEL
+        "LEDs_4Bit/LEDs_4Bit/gpio_core_1/iGPIO_xferAck" BEL
+        "LEDs_4Bit/LEDs_4Bit/gpio_core_1/gpio_Data_Out_0" BEL
+        "LEDs_4Bit/LEDs_4Bit/gpio_core_1/gpio_Data_Out_1" BEL
+        "LEDs_4Bit/LEDs_4Bit/gpio_core_1/gpio_Data_Out_2" BEL
+        "LEDs_4Bit/LEDs_4Bit/gpio_core_1/gpio_Data_Out_3" BEL
+        "LEDs_4Bit/LEDs_4Bit/gpio_core_1/gpio_OE_0" BEL
+        "LEDs_4Bit/LEDs_4Bit/gpio_core_1/gpio_OE_1" BEL
+        "LEDs_4Bit/LEDs_4Bit/gpio_core_1/gpio_xferAck_Reg" BEL
+        "LEDs_4Bit/LEDs_4Bit/gpio_core_1/Mshreg_gpio_Data_In_0/SRL16E" BEL
+        "LEDs_4Bit/LEDs_4Bit/gpio_core_1/Mshreg_gpio_Data_In_1/SRL16E" BEL
+        "LEDs_4Bit/LEDs_4Bit/gpio_core_1/Mshreg_gpio_Data_In_2/SRL16E" BEL
+        "LEDs_4Bit/LEDs_4Bit/gpio_core_1/Mshreg_gpio_Data_In_3/SRL16E" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/Core_Reset_Req_0_d2" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/EXT_LPF/asr_lpf_0" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/RstcPPCresetcore_0" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/core_req_edge_0" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/RstcPPCresetchip_0" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/EXT_LPF/exr_d1" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/EXT_LPF/lpf_int" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/chip_Reset_Req_d1" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/bsr_dec_1" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/system_Reset_Req_d1" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/core_cnt_en_0" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/Bus_Struct_Reset_0" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/RstcPPCresetsys_0" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/Core_Reset_Req_0_d3" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/CORE_RESET_0/q_int_0" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/CORE_RESET_0/q_int_1" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/CORE_RESET_0/q_int_2" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/CORE_RESET_0/q_int_3" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/EXT_LPF/exr_lpf_3" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/EXT_LPF/asr_lpf_3" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/EXT_LPF/exr_lpf_2" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/EXT_LPF/asr_lpf_2" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/EXT_LPF/exr_lpf_1" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/EXT_LPF/asr_lpf_1" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/EXT_LPF/exr_lpf_0" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/EXT_LPF/lpf_asr" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/EXT_LPF/lpf_exr" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/SEQ_COUNTER/q_int_5" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/SEQ_COUNTER/q_int_4" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/SEQ_COUNTER/q_int_3" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/SEQ_COUNTER/q_int_2" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/SEQ_COUNTER/q_int_1" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/SEQ_COUNTER/q_int_0" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/seq_cnt_en" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/chip_Reset_Req_d3" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/system_Reset_Req_d3" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/chip_Reset_Req_d2" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/Sys" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/bsr" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/Core" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/system_Reset_Req_d2" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/Chip" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/core_dec_2" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/core_dec_0" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/from_sys" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/sys_edge" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/seq_clr" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/ris_edge" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/bsr_dec_2" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/bsr_dec_0" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/chip_dec_2" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/chip_dec_1" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/SEQ/chip_dec_0" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/EXT_LPF/POR_SRL_I/SRL16E" BEL
+        "proc_sys_reset_0/proc_sys_reset_0/EXT_LPF/Mshreg_asr_lpf_0/SRL16E"
+        BEL
+        "proc_sys_reset_0/proc_sys_reset_0/Mshreg_Core_Reset_Req_0_d2/SRL16E"
+        BEL "forward/forward/gpio_core_1/gpio_Data_In_0" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/sl_wrcomp_i" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/rd_clear_sl_busy" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_7"
+        BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_6"
+        BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_5"
+        BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_4"
+        BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_3"
+        BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_2"
+        BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_1"
+        BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_0"
+        BEL "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_pavalid_reg" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/addr_cntl_cs_0" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_31" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_size_reg_3" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_size_reg_2" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_27" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_26" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_25" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_24" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_23" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_22" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_21" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_20" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_19" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_18" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_17" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_16" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_15" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_14" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_13" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_12" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_11" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_10" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_9" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_8" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_7" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_6" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_5" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_4" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_3" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_2" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_1" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_0" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/sl_rearbitrate_i" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/sl_mbusy_i_0" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_masterid_reg_0" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_rnw_reg" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/sl_mbusy_i_1" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_be_reg_3" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/set_sl_busy" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_rnw_i" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/data_timeout" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_3" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/sl_busy" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/master_id_0" BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_8"
+        BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/decode_hit_reg"
+        BEL "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0"
+        BEL
+        "forward/forward/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_s_h_0"
+        BEL "forward/forward/gpio_core_1/GPIO_DBus_i_31" BEL
+        "forward/forward/gpio_core_1/gpio_xferAck_Reg" BEL
+        "forward/forward/gpio_core_1/iGPIO_xferAck" BEL
+        "forward/forward/gpio_core_1/Mshreg_gpio_Data_In_0/SRL16E" BEL
+        "backward/backward/gpio_core_1/gpio_Data_In_0" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/sl_wrcomp_i" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/rd_clear_sl_busy" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_7"
+        BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_6"
+        BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_5"
+        BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_4"
+        BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_3"
+        BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_2"
+        BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_1"
+        BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_0"
+        BEL "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_pavalid_reg"
+        BEL "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/addr_cntl_cs_0" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_31" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_size_reg_3" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_size_reg_2" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_27" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_26" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_25" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_24" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_23" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_22" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_21" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_20" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_19" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_18" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_17" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_16" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_15" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_14" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_13" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_12" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_11" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_10" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_9" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_8" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_7" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_6" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_5" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_4" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_3" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_2" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_1" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_0" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/sl_rearbitrate_i" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/sl_mbusy_i_0" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_masterid_reg_0" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_rnw_reg" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/sl_mbusy_i_1" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/plb_be_reg_3" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/set_sl_busy" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_rnw_i" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/data_timeout" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_3" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/sl_busy" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/master_id_0" BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_8"
+        BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/decode_hit_reg"
+        BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0"
+        BEL
+        "backward/backward/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_s_h_0"
+        BEL "backward/backward/gpio_core_1/GPIO_DBus_i_31" BEL
+        "backward/backward/gpio_core_1/gpio_xferAck_Reg" BEL
+        "backward/backward/gpio_core_1/iGPIO_xferAck" BEL
+        "backward/backward/gpio_core_1/Mshreg_gpio_Data_In_0/SRL16E" BEL
+        "motorseq/motorseq/gpio_core_1/gpio_Data_In_3" BEL
+        "motorseq/motorseq/gpio_core_1/gpio_Data_In_2" BEL
+        "motorseq/motorseq/gpio_core_1/gpio_Data_In_1" BEL
+        "motorseq/motorseq/gpio_core_1/gpio_Data_In_0" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/sl_wrcomp_i" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/rd_clear_sl_busy" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_7"
+        BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_6"
+        BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_5"
+        BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_4"
+        BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_3"
+        BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_2"
+        BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_1"
+        BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_0"
+        BEL "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_31"
+        BEL "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_30"
+        BEL "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_29"
+        BEL "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_28"
+        BEL "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_pavalid_reg"
+        BEL "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/addr_cntl_cs_0" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_31" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_30" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_29" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_28" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_size_reg_3" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_size_reg_2" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_29" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_27" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_26" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_25" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_24" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_23" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_22" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_21" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_20" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_19" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_18" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_17" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_16" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_15" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_14" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_13" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_12" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_11" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_10" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_9" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_8" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_7" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_6" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_5" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_4" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_3" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_2" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_1" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_0" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/sl_rearbitrate_i" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/sl_mbusy_i_0" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_masterid_reg_0" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_rnw_reg" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/sl_mbusy_i_1" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/plb_be_reg_3" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/set_sl_busy" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_rnw_i" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/data_timeout" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_3" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_29" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/sl_busy" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/master_id_0" BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_8"
+        BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/decode_hit_reg"
+        BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0"
+        BEL
+        "motorseq/motorseq/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_s_h_0"
+        BEL "motorseq/motorseq/gpio_core_1/GPIO_DBus_i_30" BEL
+        "motorseq/motorseq/gpio_core_1/gpio_OE_2" BEL
+        "motorseq/motorseq/gpio_core_1/gpio_OE_3" BEL
+        "motorseq/motorseq/gpio_core_1/GPIO_DBus_i_31" BEL
+        "motorseq/motorseq/gpio_core_1/GPIO_DBus_i_28" BEL
+        "motorseq/motorseq/gpio_core_1/GPIO_DBus_i_29" BEL
+        "motorseq/motorseq/gpio_core_1/iGPIO_xferAck" BEL
+        "motorseq/motorseq/gpio_core_1/gpio_Data_Out_0" BEL
+        "motorseq/motorseq/gpio_core_1/gpio_Data_Out_1" BEL
+        "motorseq/motorseq/gpio_core_1/gpio_Data_Out_2" BEL
+        "motorseq/motorseq/gpio_core_1/gpio_Data_Out_3" BEL
+        "motorseq/motorseq/gpio_core_1/gpio_OE_0" BEL
+        "motorseq/motorseq/gpio_core_1/gpio_OE_1" BEL
+        "motorseq/motorseq/gpio_core_1/gpio_xferAck_Reg" BEL
+        "motorseq/motorseq/gpio_core_1/Mshreg_gpio_Data_In_0/SRL16E" BEL
+        "motorseq/motorseq/gpio_core_1/Mshreg_gpio_Data_In_1/SRL16E" BEL
+        "motorseq/motorseq/gpio_core_1/Mshreg_gpio_Data_In_2/SRL16E" BEL
+        "motorseq/motorseq/gpio_core_1/Mshreg_gpio_Data_In_3/SRL16E" BEL
+        "halt/halt/gpio_core_1/gpio_Data_In_0" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/sl_wrcomp_i" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/rd_clear_sl_busy" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_7"
+        BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_6"
+        BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_5"
+        BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_4"
+        BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_3"
+        BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_2"
+        BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_1"
+        BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_0"
+        BEL "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_pavalid_reg" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/addr_cntl_cs_0" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_31" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_size_reg_3" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_size_reg_2" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_27" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_26" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_25" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_24" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_23" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_22" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_21" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_20" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_19" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_18" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_17" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_16" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_15" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_14" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_13" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_12" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_11" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_10" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_9" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_8" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_7" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_6" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_5" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_4" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_3" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_2" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_1" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_abus_reg_0" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/sl_rearbitrate_i" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/sl_mbusy_i_0" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_masterid_reg_0" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_rnw_reg" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/sl_mbusy_i_1" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/plb_be_reg_3" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/set_sl_busy" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_rnw_i" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/data_timeout" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_3" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/sl_busy" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/master_id_0" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_8"
+        BEL "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/decode_hit_reg"
+        BEL "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0" BEL
+        "halt/halt/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_s_h_0" BEL
+        "halt/halt/gpio_core_1/GPIO_DBus_i_31" BEL
+        "halt/halt/gpio_core_1/gpio_xferAck_Reg" BEL
+        "halt/halt/gpio_core_1/iGPIO_xferAck" BEL
+        "halt/halt/gpio_core_1/Mshreg_gpio_Data_In_0/SRL16E";
+PIN ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCUERR_reg2_pins<1> = BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCUERR_reg2" PINNAME
+        A2;
+PIN ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCUERR_reg1_pins<1> = BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCUERR_reg1" PINNAME
+        A2;
+PIN ppc405_0/ppc405_0/DCU_PLB_MRdWdAddr_reg_3_pins<2> = BEL
+        "ppc405_0/ppc405_0/DCU_PLB_MRdWdAddr_reg_3" PINNAME D;
+PIN ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLB_MRdErr_reg_and00001_pins<1> =
+        BEL "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLB_MRdErr_reg_and00001"
+        PINNAME A2;
+PIN ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCURDWDADDR<1>1_pins<1> =
+        BEL "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCURDWDADDR<1>1"
+        PINNAME A2;
+PIN ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCURDWDADDR<2>1_pins<1> =
+        BEL "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCURDWDADDR<2>1"
+        PINNAME A2;
+PIN ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICURDWDADDR<1>1_pins<1> =
+        BEL "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICURDWDADDR<1>1"
+        PINNAME A2;
+PIN ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICURDWDADDR<2>1_pins<1> =
+        BEL "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICURDWDADDR<2>1"
+        PINNAME A2;
+PIN ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCUSSIZE<1>1_pins<1> = BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCUSSIZE<1>1" PINNAME
+        A2;
+PIN ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCUSSIZE<1>1_pins<2> = BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCUSSIZE<1>1" PINNAME
+        A3;
+PIN ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICURDWDADDR<3>1_pins<1> =
+        BEL "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICURDWDADDR<3>1"
+        PINNAME A2;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_55_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_55" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_54_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_54" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_53_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_53" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_52_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_52" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_51_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_51" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_50_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_50" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_49_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_49" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_48_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_48" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_47_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_47" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_46_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_46" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_45_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_45" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_44_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_44" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_43_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_43" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_42_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_42" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_41_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_41" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_40_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_40" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_39_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_39" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_38_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_38" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_37_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_37" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_36_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_36" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_35_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_35" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_34_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_34" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_33_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_33" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_32_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_32" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_23_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_23" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_22_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_22" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_21_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_21" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_20_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_20" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_19_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_19" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_18_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_18" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_17_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_17" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_16_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_16" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_15_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_15" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_14_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_14" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_13_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_13" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_12_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_12" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_11_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_11" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_10_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_10" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_9_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_9" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_8_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_8" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_7_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_7" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_6_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_6" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_5_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_5" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_4_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_4" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_3_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_3" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_2_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_2" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_1_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_1" PINNAME D;
+PIN ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_0_pins<2> = BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_0" PINNAME D;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<924> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS0;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<926> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS10;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<927> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS11;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<928> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS12;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<929> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS13;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<930> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS14;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<931> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS15;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<932> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS16;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<933> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS17;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<934> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS18;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<935> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS19;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<925> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS1;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<937> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS20;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<938> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS21;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<939> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS22;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<940> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS23;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<936> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS2;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<950> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS32;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<951> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS33;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<952> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS34;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<953> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS35;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<954> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS36;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<955> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS37;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<956> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS38;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<957> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS39;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<947> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS3;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<959> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS40;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<960> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS41;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<961> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS42;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<962> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS43;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<963> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS44;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<964> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS45;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<965> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS46;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<966> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS47;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<967> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS48;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<968> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS49;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<958> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS4;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<970> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS50;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<971> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS51;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<972> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS52;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<973> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS53;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<974> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS54;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<975> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS55;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<969> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS5;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<980> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS6;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<985> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS7;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<986> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS8;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<987> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME PLBC405ICURDDBUS9;
+PIN plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/MBUSY_OR/Y_0_or0000_pins<4> = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/MBUSY_OR/Y_0_or0000" PINNAME D;
+PIN plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_24_or0000_pins<4> = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_24_or0000" PINNAME D;
+PIN plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_25_or0000_pins<4> = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_25_or0000" PINNAME D;
+PIN plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_26_or0000_pins<4> = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_26_or0000" PINNAME D;
+PIN plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_27_or0000_pins<4> = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_27_or0000" PINNAME D;
+PIN plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_28_or0000_pins<4> = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_28_or0000" PINNAME D;
+PIN plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_29_or0000_pins<4> = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_29_or0000" PINNAME D;
+PIN plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_30_or0000_pins<4> = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_30_or0000" PINNAME D;
+PIN plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_31_or0000_pins<4> = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_31_or0000" PINNAME D;
+PIN plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_56_or0000_pins<4> = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_56_or0000" PINNAME D;
+PIN plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_57_or0000_pins<4> = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_57_or0000" PINNAME D;
+PIN plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_58_or0000_pins<4> = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_58_or0000" PINNAME D;
+PIN plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_59_or0000_pins<4> = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_59_or0000" PINNAME D;
+PIN plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_60_or0000_pins<4> = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_60_or0000" PINNAME D;
+PIN plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_61_or0000_pins<4> = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_61_or0000" PINNAME D;
+PIN plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_62_or0000_pins<4> = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_62_or0000" PINNAME D;
+PIN plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_63_or0000_pins<4> = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_63_or0000" PINNAME D;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout0_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout0_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout10_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout10_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout11_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout11_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout12_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout12_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout13_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout13_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout14_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout14_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout15_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout15_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout16_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout16_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout17_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout17_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout18_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout18_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout19_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout19_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout1_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout1_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout20_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout20_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout21_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout21_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout22_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout22_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout23_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout23_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout24_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout24_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout25_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout25_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout26_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout26_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout27_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout27_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout28_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout28_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout29_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout29_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout2_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout2_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout30_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout30_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout31_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout31_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout32_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout32_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout33_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout33_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout34_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout34_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout35_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout35_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout36_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout36_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout37_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout37_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout38_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout38_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout39_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout39_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout3_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout3_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout40_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout40_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout41_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout41_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout42_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout42_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout43_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout43_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout44_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout44_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout45_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout45_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout46_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout46_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout47_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout47_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout48_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout48_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout49_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout49_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout4_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout4_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout50_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout50_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout51_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout51_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout52_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout52_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout53_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout53_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout54_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout54_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout55_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout55_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout56_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout56_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout57_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout57_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout58_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout58_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout59_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout59_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout5_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout5_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout60_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout60_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout61_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout61_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout62_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout62_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout6_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout6_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout7_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout7_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout8_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout8_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout9_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout9_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout_0_or00001_pins<1>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout_0_or00001"
+        PINNAME A2;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_MUXEDSIGNALS/PLB_MTimeout_0_and00001_pins<4>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_MUXEDSIGNALS/PLB_MTimeout_0_and00001"
+        PINNAME D;
+PIN plb0/plb0/GEN_SHARED.I_PLB_RD_DATAPATH/PLB_MRdDAck_0_and00001_pins<4> =
+        BEL "plb0/plb0/GEN_SHARED.I_PLB_RD_DATAPATH/PLB_MRdDAck_0_and00001"
+        PINNAME D;
+PIN plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/PLB_MWrDAck_0_and00001_pins<4> =
+        BEL "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/PLB_MWrDAck_0_and00001"
+        PINNAME D;
+PIN ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_request_or0000_SW0_pins<1> =
+        BEL "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_request_or0000_SW0"
+        PINNAME A2;
+PIN ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_request_or0000_SW0_pins<2> =
+        BEL "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_request_or0000_SW0"
+        PINNAME A3;
+PIN ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCUADDRACK1_pins<2> = BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCUADDRACK1" PINNAME
+        A3;
+PIN ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCUADDRACK1_pins<3> = BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCUADDRACK1" PINNAME
+        A4;
+TIMEGRP ppc405_0_MCYCLE_DPLB0 = PIN
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCUERR_reg2_pins<1>"
+        PIN
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCUERR_reg1_pins<1>"
+        PIN "ppc405_0/ppc405_0/DCU_PLB_MRdWdAddr_reg_3_pins<2>" PIN
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLB_MRdErr_reg_and00001_pins<1>"
+        PIN
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCURDWDADDR<1>1_pins<1>"
+        PIN
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCURDWDADDR<2>1_pins<1>"
+        PIN
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICURDWDADDR<1>1_pins<1>"
+        PIN
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICURDWDADDR<2>1_pins<1>"
+        PIN
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCUSSIZE<1>1_pins<1>"
+        PIN
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCUSSIZE<1>1_pins<2>"
+        PIN
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICURDWDADDR<3>1_pins<1>"
+        PIN "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_55_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_54_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_53_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_52_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_51_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_50_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_49_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_48_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_47_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_46_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_45_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_44_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_43_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_42_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_41_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_40_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_39_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_38_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_37_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_36_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_35_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_34_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_33_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_32_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_23_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_22_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_21_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_20_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_19_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_18_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_17_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_16_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_15_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_14_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_13_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_12_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_11_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_10_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_9_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_8_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_7_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_6_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_5_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_4_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_3_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_2_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_1_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_0_pins<2>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<924>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<926>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<927>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<928>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<929>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<930>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<931>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<932>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<933>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<934>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<935>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<925>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<937>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<938>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<939>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<940>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<936>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<950>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<951>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<952>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<953>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<954>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<955>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<956>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<957>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<947>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<959>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<960>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<961>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<962>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<963>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<964>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<965>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<966>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<967>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<968>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<958>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<970>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<971>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<972>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<973>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<974>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<975>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<969>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<980>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<985>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<986>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<987>" PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/MBUSY_OR/Y_0_or0000_pins<4>" PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_24_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_25_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_26_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_27_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_28_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_29_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_30_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_31_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_56_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_57_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_58_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_59_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_60_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_61_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_62_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_63_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout0_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout10_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout11_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout12_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout13_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout14_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout15_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout16_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout17_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout18_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout19_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout1_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout20_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout21_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout22_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout23_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout24_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout25_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout26_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout27_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout28_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout29_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout2_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout30_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout31_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout32_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout33_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout34_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout35_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout36_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout37_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout38_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout39_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout3_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout40_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout41_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout42_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout43_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout44_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout45_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout46_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout47_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout48_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout49_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout4_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout50_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout51_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout52_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout53_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout54_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout55_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout56_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout57_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout58_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout59_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout5_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout60_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout61_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout62_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout6_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout7_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout8_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout9_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX/lutout_0_or00001_pins<1>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_MUXEDSIGNALS/PLB_MTimeout_0_and00001_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_RD_DATAPATH/PLB_MRdDAck_0_and00001_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_WR_DATAPATH/PLB_MWrDAck_0_and00001_pins<4>"
+        PIN
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_request_or0000_SW0_pins<1>"
+        PIN
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_request_or0000_SW0_pins<2>"
+        PIN
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCUADDRACK1_pins<2>"
+        PIN
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCUADDRACK1_pins<3>";
+TIMEGRP ppc405_0_WRAPPER = BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd8" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd7" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd6" BEL
+        "ppc405_0/ppc405_0/DCU_PLB_MRdWdAddr_reg_3" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/slow_clk_div2"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/clk_1_to_1"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_minus1_4"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/slow_clk_div2"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/clk_1_to_1"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_minus1_4"
+        BEL "ppc405_0/ppc405_0/DCU_PLB_MRdWdAddr_reg_2" BEL
+        "ppc405_0/ppc405_0/DCU_PLB_MRdWdAddr_reg_1" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDACK_reg" BEL
+        "ppc405_0/ppc405_0/PLBC405DCUBUSY_reg" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_63" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_62" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_61" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_60" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_59" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_58" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_57" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_56" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_55" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_54" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_53" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_52" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_51" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_50" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_49" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_48" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_47" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_46" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_45" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_44" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_43" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_42" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_41" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_40" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_39" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_38" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_37" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_36" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_35" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_34" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_33" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_32" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_31" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_30" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_29" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_28" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_27" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_26" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_25" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_24" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_23" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_22" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_21" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_20" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_19" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_18" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_17" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_16" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_15" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_14" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_13" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_12" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_11" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_10" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_9" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_8" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_7" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_6" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_5" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_4" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_3" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_2" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_1" BEL
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_0" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd5" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd4" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd3" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd2" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd1" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/new_count_4"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/new_count_3"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/new_count_2"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/new_count_1"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/new_count_0"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/count_0"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/count_1"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/count_2"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/count_3"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/count_4"
+        BEL "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/dack_cnt_0" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/dack_cnt_1" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/dack_cnt_2" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/slow_clk_div2_del"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_4"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_3"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_2"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_1"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_0"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/sample_cycle"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_minus1_3"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_minus1_2"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_minus1_1"
+        BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_minus1_0"
+        BEL "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/abort_pending_dly" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_size_save_2" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_size_save_3" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_0" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_1" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_2" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_3" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_4" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_5" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_6" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_7" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_8" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_9" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_10" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_11" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_12" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_13" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_14" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_15" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_16" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_17" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_18" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_19" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_20" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_21" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_22" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_23" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_24" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_25" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_26" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_27" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_28" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_ABus_save_29" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_request_int" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_priority_save_0" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/M_priority_save_1" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/abort_pending" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/dack_load_0" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/dack_load_1" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/abort_pipe" BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/read_pipe" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/new_count_4"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/new_count_3"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/new_count_2"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/new_count_0"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/new_count_1"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/count_0"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/count_1"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/count_2"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/count_3"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/count_4"
+        BEL "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/dack_cnt_0" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/dack_cnt_1" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/slow_clk_div2_del"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_4"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_3"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_2"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_1"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_0"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/sample_cycle"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_minus1_3"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_minus1_2"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_minus1_1"
+        BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/ratio_minus1_0"
+        BEL "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd2" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/adapter_cs_FSM_FFd1" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLB_MRdErr_reg" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_0" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_1" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_2" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_3" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_4" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_5" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_6" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_7" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_8" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_9" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_10" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_11" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_12" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_13" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_14" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_15" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_16" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_17" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_18" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_19" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_20" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_21" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_22" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_23" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_24" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_25" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_26" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_27" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_28" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_ABus_29" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_RNW" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/int_C405PLBDCUBE_0" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/int_C405PLBDCUBE_1" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/int_C405PLBDCUBE_2" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/int_C405PLBDCUBE_3" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/int_C405PLBDCUBE_4" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/int_C405PLBDCUBE_5" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/int_C405PLBDCUBE_6" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/int_C405PLBDCUBE_7" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_request" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_priority_0" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_priority_1" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/M_size_2" BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/rnw_reg";
+PIN ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICUERR1_pins<1> = BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICUERR1" PINNAME A2;
+PIN plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/MBUSY_OR/Y_1_or0000_pins<4> = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/MBUSY_OR/Y_1_or0000" PINNAME D;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_MUXEDSIGNALS/PLB_MAddrAck_1_and00001_pins<4>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_MUXEDSIGNALS/PLB_MAddrAck_1_and00001"
+        PINNAME D;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_MUXEDSIGNALS/PLB_MTimeout_1_and00001_pins<4>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_MUXEDSIGNALS/PLB_MTimeout_1_and00001"
+        PINNAME D;
+PIN ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICUSSIZE<1>1_pins<1> = BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICUSSIZE<1>1" PINNAME
+        A2;
+PIN ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICUSSIZE<1>1_pins<2> = BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICUSSIZE<1>1" PINNAME
+        A3;
+PIN
+        plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_MUXEDSIGNALS/PLB_MSSize_3_mux00001_pins<4>
+        = BEL
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_MUXEDSIGNALS/PLB_MSSize_3_mux00001"
+        PINNAME D;
+PIN ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/dack_cnt_not0001_SW0_pins<2> =
+        BEL "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/dack_cnt_not0001_SW0"
+        PINNAME A3;
+PIN ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/dack_cnt_not0001_SW0_pins<3> =
+        BEL "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/dack_cnt_not0001_SW0"
+        PINNAME A4;
+PIN plb0/plb0/GEN_SHARED.I_PLB_RD_DATAPATH/PLB_MRdDAck_1_and00001_pins<4> =
+        BEL "plb0/plb0/GEN_SHARED.I_PLB_RD_DATAPATH/PLB_MRdDAck_1_and00001"
+        PINNAME D;
+TIMEGRP ppc405_0_MCYCLE_IPLB0 = PIN
+        "ppc405_0/ppc405_0/DCU_PLB_MRdWdAddr_reg_3_pins<2>" PIN
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCURDWDADDR<1>1_pins<1>"
+        PIN
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/PLBC405DCURDWDADDR<2>1_pins<1>"
+        PIN "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICUERR1_pins<1>"
+        PIN
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICURDWDADDR<1>1_pins<1>"
+        PIN
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICURDWDADDR<2>1_pins<1>"
+        PIN
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICURDWDADDR<3>1_pins<1>"
+        PIN "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_55_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_54_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_53_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_52_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_51_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_50_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_49_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_48_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_47_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_46_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_45_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_44_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_43_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_42_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_41_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_40_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_39_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_38_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_37_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_36_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_35_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_34_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_33_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_32_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_23_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_22_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_21_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_20_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_19_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_18_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_17_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_16_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_15_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_14_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_13_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_12_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_11_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_10_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_9_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_8_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_7_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_6_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_5_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_4_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_3_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_2_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_1_pins<2>" PIN
+        "ppc405_0/ppc405_0/PLBC405DCURDDBUS_reg_0_pins<2>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<924>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<926>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<927>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<928>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<929>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<930>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<931>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<932>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<933>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<934>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<935>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<925>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<937>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<938>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<939>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<940>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<936>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<950>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<951>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<952>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<953>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<954>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<955>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<956>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<957>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<947>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<959>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<960>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<961>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<962>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<963>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<964>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<965>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<966>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<967>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<968>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<958>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<970>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<971>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<972>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<973>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<974>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<975>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<969>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<980>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<985>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<986>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<987>" PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/MBUSY_OR/Y_1_or0000_pins<4>" PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_24_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_25_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_26_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_27_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_28_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_29_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_30_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_31_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_56_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_57_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_58_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_59_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_60_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_61_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_62_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR/Y_63_or0000_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_MUXEDSIGNALS/PLB_MAddrAck_1_and00001_pins<4>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_MUXEDSIGNALS/PLB_MTimeout_1_and00001_pins<4>"
+        PIN
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICUSSIZE<1>1_pins<1>"
+        PIN
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/PLBC405ICUSSIZE<1>1_pins<2>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_MUXEDSIGNALS/PLB_MSSize_3_mux00001_pins<4>"
+        PIN
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/dack_cnt_not0001_SW0_pins<2>"
+        PIN
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/dack_cnt_not0001_SW0_pins<3>"
+        PIN
+        "plb0/plb0/GEN_SHARED.I_PLB_RD_DATAPATH/PLB_MRdDAck_1_and00001_pins<4>";
+TIMEGRP CPUS = BEL "ppc405_0/ppc405_0/PPC405_i/PPC405_i" BEL
+        "jtagppc_cntlr_0/jtagppc_cntlr_0/auto_ppc_connectivity.auto_PPC405.PPC_auto_i0";
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<579> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME C405RSTCHIPRESETREQ;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<580> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME C405RSTCORERESETREQ;
+PIN ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<581> = BEL
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i" PINNAME C405RSTSYSRESETREQ;
+TIMEGRP RST_GRP = PIN "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<579>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<580>" PIN
+        "ppc405_0/ppc405_0/PPC405_i/PPC405_i_pins<581>";
+TIMEGRP ppc405_0_sample_cycle_IPLB0 = BEL
+        "ppc405_0/ppc405_0/IPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/sample_cycle";
+TIMEGRP ppc405_0_sample_cycle_DPLB0 = BEL
+        "ppc405_0/ppc405_0/DPLB0_PLBv46_Adapter_i/Inst_mpmc2_sample_cycle/sample_cycle";
+PIN
+        clock_generator_0/clock_generator_0/Using_DCM0.DCM0_INST/DCM_INST/Using_Virtex.DCM_INST_pins<10>
+        = BEL
+        "clock_generator_0/clock_generator_0/Using_DCM0.DCM0_INST/DCM_INST/Using_Virtex.DCM_INST"
+        PINNAME CLKIN;
+TIMEGRP sys_clk_pin = BEL
+        "clock_generator_0/clock_generator_0/Using_DCM0.DCM0_INST/DCM_INST/rsti2"
+        BEL "clock_generator_0/RST_shift3" BEL "clock_generator_0/RST_shift2"
+        BEL "clock_generator_0/RST_shift1" BEL
+        "clock_generator_0/clock_generator_0/Using_DCM0.DCM0_INST/DCM_INST/rsti"
+        PIN
+        "clock_generator_0/clock_generator_0/Using_DCM0.DCM0_INST/DCM_INST/Using_Virtex.DCM_INST_pins<10>"
+        BEL
+        "clock_generator_0/clock_generator_0/Using_DCM0.DCM0_INST/DCM_INST/Mshreg_rsti/SRL16E";
+TIMEGRP ppc405_0_FABRIC = FFS(*) RAMS(*) EXCEPT TIMEGRP "ppc405_0_WRAPPER";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 10 ns HIGH 50%;
+TIMEGRP "FFS" = FFS(*);
+PATH TS_RST1_path = FROM TIMEGRP "CPUS" THRU TIMEGRP "RST_GRP" TO TIMEGRP
+        "FFS";
+PATH "TS_RST1_path" TIG;
+TS_clock_generator_0_clock_generator_0_DCM0_CLK_OUT_0_ = PERIOD TIMEGRP
+        "clock_generator_0_clock_generator_0_DCM0_CLK_OUT_0_" TS_sys_clk_pin
+        HIGH 50%;
+PIN sys_rst_pin_pins<0> = BEL "sys_rst_pin" PINNAME PAD;
+PIN "sys_rst_pin_pins<0>" TIG;
+SCHEMATIC END;
+

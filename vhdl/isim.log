@@ -1,0 +1,48 @@
+Command line:
+   ./dcm_tbw_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  55487
+
+Thu Aug 16 14:23:47 2012
+
+Total Line Count : 714
+
+ Elaboration Time: 0.0156 sec
+
+ Current Memory Usage: 273.383 Meg
+
+ Total Signals          : 256
+ Total Nets             : 253
+ Total Signal Drivers   : 138
+ Total Blocks           : 24
+ Total Primitive Blocks : 9
+ Total Processes        : 91
+ Total Traceable Variables  : 160
+ Total Scalar Nets and Variables : 5607
+ntrace select -o on -n /dcm_tbw/en 
+ntrace select -o on -n /dcm_tbw/clk 
+ntrace select -o on -n /dcm_tbw/dir 
+ntrace select -o on -n /dcm_tbw/reset 
+ntrace select -o on -n /dcm_tbw/data_out 
+ntrace select -o on -n /dcm_tbw/period 
+ntrace select -o on -n /dcm_tbw/duty_cycle 
+ntrace select -o on -n /dcm_tbw/offset 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+isimrun all 
+isimstop -s 
+isimrun 1000 ns 
+isimrun 1000 ns 
+isimrun 1000 ns 
+isimrun all 
+isimstop -s 
+
+ Total Simulation Time: 16.7077 sec
+
+ Current Memory Usage: 282.886 Meg
+
+Thu Aug 16 14:58:52 2012
+

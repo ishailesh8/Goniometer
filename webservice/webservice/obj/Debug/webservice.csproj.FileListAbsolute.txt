@@ -1,0 +1,15 @@
+D:\Process\webservice\webservice\webservice\bin\Debug\webservice.exe.config
+D:\Process\webservice\webservice\webservice\bin\Debug\webservice.exe
+D:\Process\webservice\webservice\webservice\bin\Debug\webservice.pdb
+D:\Process\webservice\webservice\webservice\obj\Debug\webservice.csprojResolveAssemblyReference.cache
+D:\Process\webservice\webservice\webservice\obj\Debug\webservice.exe
+D:\Process\webservice\webservice\webservice\obj\Debug\webservice.pdb
+D:\Process\webservice\webservice\webservice\bin\Debug\goniometer.dll
+D:\Process\webservice\webservice\webservice\bin\Debug\goniometer.pdb
+D:\Process\webservice\webservice\bin\Debug\webservice.exe.config
+D:\Process\webservice\webservice\obj\Debug\webservice.exe
+D:\Process\webservice\webservice\obj\Debug\webservice.pdb
+D:\Process\webservice\webservice\bin\Debug\webservice.exe
+D:\Process\webservice\webservice\bin\Debug\webservice.pdb
+D:\Process\webservice\webservice\bin\Debug\goniometer.pdb
+D:\Process\webservice\webservice\obj\Debug\webservice.csprojResolveAssemblyReference.cache

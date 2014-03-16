@@ -1,0 +1,15 @@
+I:\IIT\Process\edk\implementation\system.ngc 1376382091
+I:/IIT/Process/edk/implementation/ppc405_0_wrapper.ngc 1376382015
+I:/IIT/Process/edk/implementation/jtagppc_cntlr_0_wrapper.ngc 1376382015
+I:/IIT/Process/edk/implementation/plb0_wrapper.ngc 1376382015
+I:/IIT/Process/edk/implementation/xps_bram_if_cntlr_1_wrapper.ngc 1376382015
+I:/IIT/Process/edk/implementation/plb_bram_if_cntlr_1_bram_wrapper.ngc 1376382015
+I:/IIT/Process/edk/implementation/rs232_uart_1_wrapper.ngc 1376382015
+I:/IIT/Process/edk/implementation/leds_4bit_wrapper.ngc 1376382015
+I:/IIT/Process/edk/implementation/clock_generator_0_wrapper.ngc 1376382015
+I:/IIT/Process/edk/implementation/proc_sys_reset_0_wrapper.ngc 1376382015
+I:/IIT/Process/edk/implementation/forward_wrapper.ngc 1376382038
+I:/IIT/Process/edk/implementation/backward_wrapper.ngc 1376382049
+I:/IIT/Process/edk/implementation/motorseq_wrapper.ngc 1376382060
+I:/IIT/Process/edk/implementation/halt_wrapper.ngc 1376382071
+OK

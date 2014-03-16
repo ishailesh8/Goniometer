@@ -1,0 +1,16 @@
+#:C0     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 K.39
+#Current Working Directory:
+#:D   C:\Users\DELL\Desktop\Motor_New\motor_new
+#Date/Time:
+#:T   Thu Aug 16 13:08:04 2012
+#------------------------------
+	#Reading C:/Users/DELL/Desktop/Motor_New/motor_new/motor_state_map.ncd...
+	#Loading device for application Rf_Device from file '2vp30.nph' in environment C:\Xilinx\10.1\ISE.
+	#   "motor_state" is an NCD, version 3.2, device xc2vp30, package ff896, speed -7
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes

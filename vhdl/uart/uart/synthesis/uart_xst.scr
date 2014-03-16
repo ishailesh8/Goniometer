@@ -1,0 +1,12 @@
+run
+-opt_mode speed
+-opt_level 1
+-p xc2vp30ff896-7
+-top uart
+-ifmt MIXED
+-ifn uart_xst.prj
+-ofn ../implementation/uart.ngc
+-hierarchy_separator /
+-iobuf YES
+-max_fanout 10000
+-sd {../implementation}

@@ -1,0 +1,4 @@
+vhdl work "dcm_divider.vhd"
+vhdl work "../../FPGA_Motor/clk_divider.vhd"
+vhdl work "../../motor.vhd"
+vhdl work "dcm_tbw.vhw"

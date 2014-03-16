@@ -1,0 +1,42 @@
+c:\users\ishailesh\documents\visual studio 2012\Projects\app\app\bin\Debug\app.exe.config
+c:\users\ishailesh\documents\visual studio 2012\Projects\app\app\bin\Debug\app.exe
+c:\users\ishailesh\documents\visual studio 2012\Projects\app\app\bin\Debug\app.pdb
+c:\users\ishailesh\documents\visual studio 2012\Projects\app\app\obj\Debug\app.csprojResolveAssemblyReference.cache
+c:\users\ishailesh\documents\visual studio 2012\Projects\app\app\obj\Debug\app.Form1.resources
+c:\users\ishailesh\documents\visual studio 2012\Projects\app\app\obj\Debug\app.Properties.Resources.resources
+c:\users\ishailesh\documents\visual studio 2012\Projects\app\app\obj\Debug\app.csproj.GenerateResource.Cache
+c:\users\ishailesh\documents\visual studio 2012\Projects\app\app\obj\Debug\app.exe
+c:\users\ishailesh\documents\visual studio 2012\Projects\app\app\obj\Debug\app.pdb
+I:\IIT\Process\app\app\bin\Debug\app.exe.config
+I:\IIT\Process\app\app\obj\Debug\app.exe
+I:\IIT\Process\app\app\obj\Debug\app.pdb
+I:\IIT\Process\app\app\bin\Debug\app.exe
+I:\IIT\Process\app\app\bin\Debug\app.pdb
+I:\IIT\Process\app\app\bin\Debug\goniometer.dll
+I:\IIT\Process\app\app\bin\Debug\goniometer.pdb
+I:\IIT\Process\app\app\obj\Debug\app.csprojResolveAssemblyReference.cache
+I:\IIT\Process\app\app\obj\Debug\app.Form1.resources
+I:\IIT\Process\app\app\obj\Debug\app.Properties.Resources.resources
+I:\IIT\Process\app\app\obj\Debug\app.csproj.GenerateResource.Cache
+D:\Process\app\app\bin\Debug\app.exe.config
+D:\Process\app\app\bin\Debug\app.exe
+D:\Process\app\app\bin\Debug\app.pdb
+D:\Process\app\app\bin\Debug\goniometer.dll
+D:\Process\app\app\bin\Debug\goniometer.pdb
+D:\Process\app\app\obj\Debug\app.NativeMethods.resources
+D:\Process\app\app\obj\Debug\app.Properties.Resources.resources
+D:\Process\app\app\obj\Debug\app.csproj.GenerateResource.Cache
+D:\Process\app\app\obj\Debug\app.exe
+D:\Process\app\app\obj\Debug\app.pdb
+D:\Process\app\app\obj\Debug\app.csprojResolveAssemblyReference.cache
+E:\IIT\Process\app\app\bin\Debug\app.exe.config
+E:\IIT\Process\app\app\bin\Debug\app.exe
+E:\IIT\Process\app\app\bin\Debug\app.pdb
+E:\IIT\Process\app\app\bin\Debug\goniometer.dll
+E:\IIT\Process\app\app\bin\Debug\goniometer.pdb
+E:\IIT\Process\app\app\obj\Debug\app.csprojResolveAssemblyReference.cache
+E:\IIT\Process\app\app\obj\Debug\app.Properties.Resources.resources
+E:\IIT\Process\app\app\obj\Debug\app.csproj.GenerateResource.Cache
+E:\IIT\Process\app\app\obj\Debug\app.exe
+E:\IIT\Process\app\app\obj\Debug\app.pdb
+E:\IIT\Process\app\app\obj\Debug\app.Form1.resources

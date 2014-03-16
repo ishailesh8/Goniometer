@@ -1,0 +1,39 @@
+// BMM LOC annotation file.
+//
+// Release 10.1i - Data2MEM K.31, build 1.5.7 Nov 8, 2007
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+//
+// Created on 08/13/13 01:56 pm
+//
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+// Processor 'ppc405_0', ID 100, memory map.
+//
+///////////////////////////////////////////////////////////////////////////////
+
+ADDRESS_MAP ppc405_0 PPC405 100
+
+
+    ///////////////////////////////////////////////////////////////////////////////
+    //
+    // Processor 'ppc405_0' address space 'plb_bram_if_cntlr_1_bram_combined' 0xFFFFC000:0xFFFFFFFF (16 KB).
+    //
+    ///////////////////////////////////////////////////////////////////////////////
+
+    ADDRESS_SPACE plb_bram_if_cntlr_1_bram_combined RAMB16 [0xFFFFC000:0xFFFFFFFF]
+        BUS_BLOCK
+            plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_0 [63:56] PLACED = X4Y12;
+            plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_1 [55:48] PLACED = X4Y9;
+            plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_2 [47:40] PLACED = X5Y12;
+            plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_3 [39:32] PLACED = X6Y12;
+            plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_4 [31:24] PLACED = X4Y11;
+            plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_5 [23:16] PLACED = X4Y10;
+            plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_6 [15:8] PLACED = X5Y13;
+            plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s9_s9_7 [7:0] PLACED = X6Y13;
+        END_BUS_BLOCK;
+    END_ADDRESS_SPACE;
+
+END_ADDRESS_MAP;
+

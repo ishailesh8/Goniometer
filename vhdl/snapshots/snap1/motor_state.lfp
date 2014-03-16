@@ -1,0 +1,5 @@
+# begin LFP file C:\Users\DELL\Desktop\Motor_New\motor_new\motor_state.lfp
+designfile motor.vhd
+parttype xc2vp30-7-ff896
+bus_delimiter 0;
+set_busdelim_onsave 1;

@@ -1,0 +1,20 @@
+ppc405_0
+UART_SOURCES = /cygdrive/c/Users/DELL/Desktop/Motor_New/motor_new/uart/uart/uart.c 
+UART_HEADERS = /cygdrive/c//Users/DELL/Desktop/Motor_New/motor_new/uart/uart/ppc405_0/include/xuartlite.h 
+UART_CC = powerpc-eabi-gcc
+UART_CC_SIZE = powerpc-eabi-size
+UART_CC_OPT = -O2
+UART_CFLAGS = 
+UART_CC_SEARCH = # -B
+UART_LIBPATH = -L./ppc405_0/lib/ # -L
+UART_INCLUDES = -I./ppc405_0/include/  -Ippc405_0/include/ # -I
+UART_LFLAGS = # -l
+UART_LINKER_SCRIPT = 
+UART_CC_DEBUG_FLAG =  -g 
+UART_CC_PROFILE_FLAG = # -pg
+UART_CC_GLOBPTR_FLAG= # -msdata=eabi
+UART_CC_INFERRED_FLAGS= 
+UART_CC_START_ADDR_FLAG=  # -Wl,-defsym -Wl,_START_ADDR=
+UART_CC_STACK_SIZE_FLAG=  # -Wl,-defsym -Wl,_STACK_SIZE=
+UART_CC_HEAP_SIZE_FLAG=  # -Wl,-defsym -Wl,_HEAP_SIZE=
+                  $(UART_CC_INFERRED_FLAGS)  \

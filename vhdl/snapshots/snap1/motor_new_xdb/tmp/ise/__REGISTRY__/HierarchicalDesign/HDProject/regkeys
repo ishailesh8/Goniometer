@@ -1,0 +1,24 @@
+CommandLine-Map
+
+s
+CommandLine-Ngdbuild
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\ngdbuild.exe -ise C:/Users/DELL/Desktop/Final/ISE_Goniometer/motor_new.ise -intstyle ise -dd _ngo -nt timestamp -i -p xc2vp30-ff896-7 motor_state.ngc motor_state.ngd
+s
+CommandLine-Par
+
+s
+CommandLine-Xst
+
+s
+Previous-NGD
+motor_state_prev_built.ngd
+s
+Previous-NGM
+
+s
+Previous-Packed-NCD
+
+s
+Previous-Routed-NCD
+
+s

@@ -1,0 +1,16 @@
+I:\IIT\Process\webapp\webapp\webapp\bin\webapp.dll
+I:\IIT\Process\webapp\webapp\webapp\bin\webapp.pdb
+I:\IIT\Process\webapp\webapp\webapp\obj\Debug\webapp.csprojResolveAssemblyReference.cache
+I:\IIT\Process\webapp\webapp\webapp\obj\Debug\webapp.dll
+I:\IIT\Process\webapp\webapp\webapp\obj\Debug\webapp.pdb
+I:\IIT\Process\webapp\webapp\webapp\bin\goniometer.dll
+I:\IIT\Process\webapp\webapp\webapp\bin\goniometer.pdb
+D:\Process\webapp\webapp\bin\webapp.dll
+D:\Process\webapp\webapp\bin\webapp.pdb
+D:\Process\webapp\webapp\bin\goniometer.dll
+D:\Process\webapp\webapp\bin\webservice.exe
+D:\Process\webapp\webapp\bin\goniometer.pdb
+D:\Process\webapp\webapp\bin\webservice.pdb
+D:\Process\webapp\webapp\obj\Debug\webapp.dll
+D:\Process\webapp\webapp\obj\Debug\webapp.pdb
+D:\Process\webapp\webapp\obj\Debug\webapp.csprojResolveAssemblyReference.cache

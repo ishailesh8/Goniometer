@@ -1,0 +1,96 @@
+Running : C:\Xilinx\10.1\ISE\bin\nt\unwrapped\fuse.exe -ise
+C:/Users/DELL/Desktop/Motor_New/motor_new/motor_new.ise -intstyle ise
+-incremental -o dcm_tbw_isim_beh.exe -prj dcm_tbw_beh.prj -top dcm_tbw
+Determining compilation order of HDL files
+Analyzing VHDL file dcm_divider.vhd
+Restoring VHDL parse-tree ieee.std_logic_1164 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_1164.vdb
+Restoring VHDL parse-tree std.standard from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/std/standard.vdb
+Restoring VHDL parse-tree ieee.numeric_std from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/numeric_std.vdb
+Restoring VHDL parse-tree unisim.vcomponents from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Analyzing VHDL file ../../FPGA_Motor/clk_divider.vhd
+Restoring VHDL parse-tree ieee.std_logic_arith from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_arith.vdb
+Restoring VHDL parse-tree ieee.std_logic_unsigned from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_unsigned.vdb
+Analyzing VHDL file ../../motor.vhd
+Analyzing VHDL file dcm_tbw.vhw
+Restoring VHDL parse-tree ieee.std_logic_textio from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_textio.vdb
+Restoring VHDL parse-tree std.textio from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/std/textio.vdb
+Saving VHDL parse-tree work.dcm_divider into
+c:/users/dell/desktop/motor_new/motor_new/isim/work/dcm_divider.vdb
+Saving VHDL parse-tree work.clk_divider into
+c:/users/dell/desktop/motor_new/motor_new/isim/work/clk_divider.vdb
+Saving VHDL parse-tree work.motor_state into
+c:/users/dell/desktop/motor_new/motor_new/isim/work/motor_state.vdb
+Saving VHDL parse-tree work.dcm_tbw into
+c:/users/dell/desktop/motor_new/motor_new/isim/work/dcm_tbw.vdb
+Starting static elaboration
+Restoring VHDL parse-tree unisim.bufg from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.ibufg from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+WARNING:HDLCompiler:321 - "N:/K.39/rtf/vhdl/src/unisims/unisim_VITAL.vhd" Line
+   12581. Comparison between unequal length arrays always returns FALSE
+WARNING:HDLCompiler:321 - "N:/K.39/rtf/vhdl/src/unisims/unisim_VITAL.vhd" Line
+   12582. Comparison between unequal length arrays always returns FALSE
+Restoring VHDL parse-tree unisim.dcm from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree ieee.vital_timing from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/vital_timing.vdb
+Restoring VHDL parse-tree ieee.vital_primitives from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/vital_primitives.vdb
+Restoring VHDL parse-tree unisim.vpkg from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+WARNING:HDLCompiler:321 - "N:/K.39/rtf/vhdl/src/unisims/unisim_VITAL.vhd" Line
+   4575. Comparison between unequal length arrays always returns FALSE
+WARNING:HDLCompiler:321 - "N:/K.39/rtf/vhdl/src/unisims/unisim_VITAL.vhd" Line
+   4647. Comparison between unequal length arrays always returns FALSE
+WARNING:HDLCompiler:321 - "N:/K.39/rtf/vhdl/src/unisims/unisim_VITAL.vhd" Line
+   4666. Comparison between unequal length arrays always returns FALSE
+Restoring VHDL parse-tree unisim.dcm_clock_divide_by_2 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.dcm_maximum_period_check from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.dcm_clock_lost from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Completed static elaboration
+Fuse Memory Usage: 143544 Kb
+Fuse CPU Usage: 858 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package textio from library std
+Using precompiled package std_logic_textio from library ieee
+Using precompiled package std_logic_arith from library ieee
+Using precompiled package std_logic_unsigned from library ieee
+Using precompiled package numeric_std from library ieee
+Using precompiled package vital_timing from library ieee
+Using precompiled package vital_primitives from library ieee
+Compiling package vcomponents
+Compiling package vpkg
+Compiling architecture bufg_v of entity bufg [bufg_default]
+Compiling architecture ibufg_v of entity ibufg
+[\IBUFG("DONT_CARE","0","DEFAULT"...]
+Compiling architecture dcm_clock_divide_by_2_v of entity dcm_clock_divide_by_2
+[dcm_clock_divide_by_2_default]
+Compiling architecture dcm_maximum_period_check_v of entity
+dcm_maximum_period_check [\dcm_maximum_period_check("CLKIN...]
+Compiling architecture dcm_maximum_period_check_v of entity
+dcm_maximum_period_check [\dcm_maximum_period_check("PSCLK...]
+Compiling architecture dcm_clock_lost_v of entity dcm_clock_lost
+[dcm_clock_lost_default]
+Compiling architecture dcm_v of entity dcm [\DCM(16.0,1,4,false,10.0,"NONE",...]
+Compiling architecture behavioral of entity dcm_divider [dcm_divider_default]
+Compiling architecture behavioral of entity clk_divider [clk_divider_default]
+Compiling architecture motor_state_sequential of entity motor_state
+[motor_state_default]
+Compiling architecture testbench_arch of entity dcm_tbw
+Compiled 32 VHDL Units
+Built simulation executable dcm_tbw_isim_beh.exe
+Fuse Memory Usage: 145956 Kb
+Fuse CPU Usage: 982 ms
